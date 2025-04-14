@@ -9,7 +9,8 @@ def get_file_names(path):
         return []
 if __name__ == '__main__':
     names = get_file_names("data")
-    files = [open(f) for f in names]
+    files = [open(f, encoding="utf-8", errors="ignore") for f in names]
+
     # files = [open("/Users/steventruong/School/csc483/jeopardy/data/enwiki-20140602-pages-articles.xml-0099.txt")]
 
     ir = nltk_engine.IRSystem(files)

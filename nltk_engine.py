@@ -16,6 +16,20 @@ counts_path = "IRdata/counts2.json"
 docID_pattern = re.compile(r"\[\[.+\]\]")
 skip_line_pattern = re.compile(r"=+.+=+")
 
+stop_words = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", 
+              "yours", "yourself", "yourselves", "he", "him", "his", "himself", "she", 
+              "her", "hers", "herself", "it", "its", "itself", "they", "them", "their", 
+              "theirs", "themselves", "what", "which", "who", "whom", "this", "that", 
+              "these", "those", "am", "is", "are", "was", "were", "be", "been", "being", 
+              "have", "has", "had", "having", "do", "does", "did", "doing", "a", "an", "the", 
+              "and", "but", "if", "or", "because", "as", "until", "while", "of", "at", "by", "for", 
+              "with", "about", "against", "between", "into", "through", "during", "before", "after", 
+              "above", "below", "to", "from", "up", "down", "in", "out", "on", "off", "over", "under", 
+              "again", "further", "then", "once", "here", "there", "when", "where", "why", "how", "all", 
+              "any", "both", "each", "few", "more", "most", "other", "some", "such", "no", "nor", "not", 
+              "only", "own", "same", "so", "than", "too", "very", "s", "t", "can", "will", "just", "don", 
+              "should", "now"]
+
 @lru_cache(maxsize=10000000)
 def cached_stem(token):
     return ps.stem(token)
@@ -103,16 +117,18 @@ class IRSystem:
                     self.weights[docID][token] += 1
                 
             # Calculate weights from term frequency for very last document
-            total = 0
-            for term, count in self.weights[docID].items():
-                tf = 1 + math.log10(count)
-                total += tf * tf
-                self.weights[docID][term] = tf
+            if docID is not None and docID in self.weights:
+                total = 0
+                for term, count in self.weights[docID].items():
+                    tf = 1 + math.log10(count)
+                    total += tf * tf
+                    self.weights[docID][term] = tf
 
-            # Cosine normalization
-            for term, weight in self.weights[docID].items():
-                cos = weight * math.sqrt(1/total)
-                self.weights[docID][term] = cos
+                # Cosine normalization
+                for term, weight in self.weights[docID].items():
+                    cos = weight * math.sqrt(1 / total)
+                    self.weights[docID][term] = cos
+
             file_count += 1
             
        
@@ -161,13 +177,20 @@ class IRSystem:
         sums = {}
         
         for docID, df_weights in self.weights.items():
-            similarity = 0
-            for term in terms:
-                if term in df_weights:
-                    similarity += weights[term] * df_weights[term]
-            if similarity not in sums:
-                sums[similarity] = []
-            sums[similarity].append(docID)
+            print("title? ", docID)
+            title_tokens = [cached_stem(w.lower()) for w in docID.split() if w.lower() not in stop_words]
+            query_tokens = [t for t in terms if t not in stop_words]
+
+            if set(title_tokens) & set(query_tokens):
+                continue
+            else:
+                similarity = 0
+                for term in terms:
+                    if term in df_weights:
+                        similarity += weights[term] * df_weights[term]
+                if similarity not in sums:
+                    sums[similarity] = []
+                sums[similarity].append(docID)
 
         highest = sorted(sums.keys(), reverse=True)
         i = 0
