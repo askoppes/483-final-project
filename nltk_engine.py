@@ -140,11 +140,16 @@ class IRSystem:
             print("Writing to json file")
             json.dump(self.counts, file, indent=4)
 
+    #def run_query(self, category, query):
     def run_query(self, query):
         terms = query.strip().split()
         terms = [cached_stem(term) for term in terms]
+        #topic = category.strip().split()
+        #topic = [cached_stem(word) for word in topic]
+        #return self._run_query(topic, terms)
         return self._run_query(terms)
 
+    #def _run_query(self, topic, terms):
     def _run_query(self, terms):
         # Use ltn to weight terms in the query:
         #   l: logarithmic tf
@@ -154,14 +159,18 @@ class IRSystem:
         # Return the top-10 document for the query 'terms'
         result = []
 
+        #all_terms = terms + topic
+
         weights = {}
         # Count terms
+        #for term in all_terms:
         for term in terms:
             if term not in weights:
                 weights[term] = 0
             weights[term] += 1
         
         # Calc tf-idf weight from counts
+        #for term in all_terms:
         for term in terms:
             if term in self.counts:
                 # Duplicates in query
@@ -180,10 +189,8 @@ class IRSystem:
             print("title? ", docID)
             title_tokens = [cached_stem(w.lower()) for w in docID.split() if w.lower() not in stop_words]
             query_tokens = [t for t in terms if t not in stop_words]
-
-            if set(title_tokens) & set(query_tokens):
-                continue
-            else:
+            
+            if set(title_tokens).isdisjoint(set(query_tokens)):
                 similarity = 0
                 for term in terms:
                     if term in df_weights:
@@ -191,6 +198,8 @@ class IRSystem:
                 if similarity not in sums:
                     sums[similarity] = []
                 sums[similarity].append(docID)
+            else:
+                continue
 
         highest = sorted(sums.keys(), reverse=True)
         i = 0

@@ -1,10 +1,10 @@
 import nltk_engine
-import spacy_engine
+#import spacy_engine
 from tqdm import tqdm
 
 # Load in the IR system from the .json files
-# ir = nltk_engine.IRSystem()
-ir = spacy_engine.IRSystem()
+ir = nltk_engine.IRSystem()
+#ir = spacy_engine.IRSystem()
 
 questions = open("questions.txt").readlines()
 queries = []
@@ -15,6 +15,7 @@ for i in range(0, len(questions), 4):
 correct = 0
 file = open("answers.txt", "w")
 for query in tqdm(queries):
+    #result = ir.run_query(query[0], query[1])
     result = ir.run_query(query[1])
     # if result[0] == query[2]:
     if query[2] in result:
