@@ -186,7 +186,7 @@ class IRSystem:
         sums = {}
         
         for docID, df_weights in self.weights.items():
-            print("title? ", docID)
+            # print("title? ", docID)
             title_tokens = [cached_stem(w.lower()) for w in docID.split() if w.lower() not in stop_words]
             query_tokens = [t for t in terms if t not in stop_words]
             
@@ -203,11 +203,11 @@ class IRSystem:
 
         highest = sorted(sums.keys(), reverse=True)
         i = 0
-        while len(result) < 10:
+        while len(result) < 100:
             result += sums[highest[i]]
             i += 1
 
-        result = result[:10]
+        result = result[:100]
     
         return result
 

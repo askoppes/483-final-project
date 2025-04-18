@@ -1,5 +1,5 @@
 import nltk_engine
-#import spacy_engine
+import spacy_engine
 from tqdm import tqdm
 
 # Load in the IR system from the .json files
