@@ -3,8 +3,11 @@ import os
 from transformers import pipeline
 from huggingface_hub import InferenceClient
 from tqdm import tqdm
+import nltk_selector
 
 model_id = "meta-llama/Llama-3.2-3B-Instruct"
+
+ir = nltk_selector.IRSystemSelector()
 
 print("Loading LLM")
 pipe = pipeline(
@@ -68,14 +71,20 @@ for query in tqdm(queries):
         max_new_tokens=256,
         pad_token_id=128001  
     )
+
+    print("LLM generated answers:")
     print(outputs[0]["generated_text"][-1]["content"])
     answers = outputs[0]["generated_text"][-1]["content"].split(",")
-    answers = [x.strip().strip("\"").lower() for x in answers]
+    answers = [x.strip().strip("\"") for x in answers]
+
+    filtered_answers = ir.run_query(query["prompt"], answers)
+    print("tf-idf filtered answers:")
+    print(filtered_answers)
 
     
     
     #if len(set(query["answer"]) & set(answers)) != 0:
-    if answers[0] in query["answer"]:
+    if filtered_answers[0].lower() in query["answer"]:
         # first answer given by the LLM is correct
         print('Correct')
         correct += 1
