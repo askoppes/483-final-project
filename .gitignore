@@ -1,0 +1,5 @@
+.env
+.venv
+data/
+IRdata
+__pycache__
