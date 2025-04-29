@@ -4,6 +4,7 @@ import argparse
 import re
 import nltk
 from nltk.stem import PorterStemmer
+from nltk.corpus import wordnet as wn
 import json
 from tqdm import tqdm
 from functools import lru_cache
@@ -143,6 +144,15 @@ class IRSystem:
     #def run_query(self, category, query):
     def run_query(self, query):
         terms = query.strip().split()
+        
+        expanded = []
+        for term in terms:
+            synset = wn.synsets(term)
+            if synset:
+                expanded.extend(synset[0].lemma_names())
+            else:
+                expanded.append(term)
+        terms = list(set(expanded))
         terms = [cached_stem(term) for term in terms]
         #topic = category.strip().split()
         #topic = [cached_stem(word) for word in topic]
@@ -171,17 +181,22 @@ class IRSystem:
         
         # Calc tf-idf weight from counts
         #for term in all_terms:
+        total = 0
         for term in terms:
             if term in self.counts:
                 # Duplicates in query
                 if (weights[term] < 0):
                     continue
                 tf = 1 + math.log10(weights[term])
+                total += tf + tf
                 idf = math.log10(len(self.weights)/self.counts[term])
                 weights[term] = tf * idf
             else:
                 weights[term] = 0
 
+        # Cosine normalize query
+        for term in terms:
+            weights[term] = weights[term] * math.sqrt(1/total)
         # Traverse docs to calc weights for each doc
         sums = {}
         

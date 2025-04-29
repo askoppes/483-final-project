@@ -5,6 +5,7 @@ import re
 import nltk
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
+from nltk.corpus import wordnet as wn
 import json
 from tqdm import tqdm
 from functools import lru_cache
@@ -230,7 +231,15 @@ class IRSystemSelector:
     #def run_query(self, category, query):
     def run_query(self, query, top_ten):
         terms = query.strip().split()
-        terms = [cached_stem(term.lower()) for term in terms]
+        # expanded = []
+        # for term in terms:
+        #     synset = wn.synsets(term)
+        #     if synset:
+        #         expanded.extend(synset[0].lemma_names())
+        #     else:
+        #         expanded.append(term)
+        # terms = list(set(expanded))
+        terms = [cached_stem(term) for term in terms]
         # stem the top results provided by the LLM to match more possible titles
         #topic = category.strip().split()
         #topic = [cached_stem(word) for word in topic]

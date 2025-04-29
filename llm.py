@@ -5,6 +5,7 @@ from huggingface_hub import InferenceClient
 from tqdm import tqdm
 import nltk_selector
 
+
 model_id = "meta-llama/Llama-3.2-3B-Instruct"
 
 ir = nltk_selector.IRSystemSelector()
@@ -75,7 +76,7 @@ for query in tqdm(queries):
     print("LLM generated answers:")
     print(outputs[0]["generated_text"][-1]["content"])
     answers = outputs[0]["generated_text"][-1]["content"].split(",")
-    answers = [x.strip().strip("\"") for x in answers]
+    answers = [x.strip().strip("\"").replace("-", " ") for x in answers]
 
     filtered_answers = ir.run_query(query["prompt"], answers)
     print("tf-idf filtered answers:")

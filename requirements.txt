@@ -3,3 +3,5 @@ nltk
 tqdm
 langchain_huggingface
 accelerate
+openai
+dotenv

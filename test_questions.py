@@ -2,6 +2,7 @@ import nltk_engine
 import spacy_engine
 from tqdm import tqdm
 
+
 # Load in the IR system from the .json files
 ir = nltk_engine.IRSystem()
 #ir = spacy_engine.IRSystem()
@@ -23,6 +24,6 @@ for query in tqdm(queries):
         correct += 1
     file.write(f"{query[0]}\n{query[1]}\n{result}\n\n")
     
-print(f"Accuracy: {(correct/100)*100}")
+print(f"Precision: {(correct/100)}")
 
 
