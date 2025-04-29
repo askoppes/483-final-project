@@ -1,0 +1,661 @@
+Loading LLM
+The dominant paper in our nation's capital, it's among the top 10 U.S. papers in circulation
+['the washington post']
+LLM generated answers:
+The Washington Post,USA Today,The New York Times,Los Angeles Times,Chicago Tribune,The Wall Street Journal,San Francisco Chronicle,The Philadelphia Inquirer,The Boston Globe,The Dallas Morning News
+tf-idf filtered answers:
+['The Wall Street Journal', 'Los Angeles Times', 'The Washington Post']
+The practice of pre-authorizing presidential use of force dates to a 1955 resolution re: this island near mainland China
+['taiwan']
+LLM generated answers:
+Taiwan,Formosa,Republic of China,Chinese Civil War,Second Taiwan Strait Crisis,United States Congress,United Nations,Cold War,Asia,East Asia
+tf-idf filtered answers:
+['Taiwan']
+Correct
+Daniel Hertzberg & James B. Stewart of this paper shared a 1988 Pulitzer for their stories about insider trading
+['the wall street journal']
+LLM generated answers:
+The Wall Street Journal,The New York Times,Los Angeles Times,Chicago Tribune,Washington Post,USA Today,San Francisco Chronicle,Boston Globe,Philadelphia Inquirer,Miami Herald
+tf-idf filtered answers:
+['The Wall Street Journal', 'Los Angeles Times']
+Correct
+Song that says, "you make me smile with my heart; your looks are laughable, unphotographable"
+['my funny valentine']
+LLM generated answers:
+My Funny Valentine,Babes in Arms,Richard Rodgers,Oscar Hammerstein II,Musical theatre,American standards,Show tunes,Romantic songs,1940s music,Classic jazz standards
+tf-idf filtered answers:
+['Musical theatre', 'Oscar Hammerstein II', 'My Funny Valentine', 'Babes in Arms']
+In 2011 bell ringers for this charity started accepting digital donations to its red kettle
+['the salvation army', 'salvation army']
+LLM generated answers:
+The Salvation Army,Red Kettle Campaign,Digital fundraising,Charity fundraising,Nonprofit organization,Christmas charity,Philanthropy,Social services,Community service,Volunteerism
+tf-idf filtered answers:
+['The Salvation Army', 'Philanthropy']
+Correct
+The Naples Museum of Art
+['florida']
+LLM generated answers:
+Florida,California,New York,Texas,Illinois,Massachusetts,Washington,Virginia,Ohio,Pennsylvania
+tf-idf filtered answers:
+['Virginia', 'Illinois', 'California', 'Florida', 'Ohio']
+This Italian painter depicted the "Adoration of the Golden Calf"
+['tintoretto']
+LLM generated answers:
+Giovanni Battista Tiepolo,Francesco Hayez,Caravaggio,Giovanni Bellini,Andrea Mantegna,Michelangelo,Raphael,Leonardo da Vinci,Tintoretto,Albrecht Dürer
+tf-idf filtered answers:
+['Leonardo da Vinci', 'Tintoretto', 'Raphael', 'Michelangelo', 'Caravaggio']
+This woman who won consecutive heptathlons at the Olympics went to UCLA on a basketball scholarship
+['jackie joyner-kersee']
+LLM generated answers:
+Jackie Joyner-Kersee,UCLA Bruins women's basketball,Olympic heptathlon,Track and field athletes,American athletes,Olympic gold medalists,Olympic silver medalists,Olympic bronze medalists,Women's sports,College basketball players
+tf-idf filtered answers:
+["Women's sports"]
+Originally this club's emblem was a wagon wheel; now it's a gearwheel with 24 cogs & 6 spokes
+['rotary international']
+LLM generated answers:
+Rotary International,Kiwanis International,Lions Clubs International,Optimist International,Toastmasters International,Junior Chamber International,The Masons,The Elks,The Knights of Columbus,The Odd Fellows
+tf-idf filtered answers:
+['Rotary International', 'Lions Clubs International']
+Correct
+Several bridges, including El Tahrir, cross the Nile in this capital
+['cairo']
+LLM generated answers:
+Cairo,Khartoum,Addis Ababa,Lagos,Nairobi,Accra,Algiers,Dakar,Tunis,Maputo
+tf-idf filtered answers:
+['Cairo', 'Tunis', 'Khartoum', 'Nairobi', 'Dakar']
+Correct
+After the fall of France in 1940, this general told his country, "France has lost a battle. But France has not lost the war"
+['charles de gaulle', 'de gaulle']
+LLM generated answers:
+Charles de Gaulle,Free French Forces,World War II,France,General Staff of the French Army,Resistance Movement,London,Allied Powers,Paris,Military Strategy
+tf-idf filtered answers:
+['Charles de Gaulle', 'Paris', 'London', 'World War II', 'Free French Forces', 'France']
+Correct
+The Taft Museum of Art
+['ohio']
+LLM generated answers:
+Ohio,New York,California,Texas,Florida,Illinois,Pennsylvania,Massachusetts,Washington,Virginia
+tf-idf filtered answers:
+['Virginia', 'Illinois', 'Ohio', 'California', 'Florida']
+The mast from the USS Maine is part of the memorial to the ship & crew at this national cemetery
+['arlington national cemetery', 'arlington cemetery']
+LLM generated answers:
+Arlington National Cemetery,National Memorial Cemetery of the Pacific,Fort Rosecrans National Cemetery,Woodlawn National Cemetery,Calverton National Cemetery,Los Angeles National Cemetery,Fort Snelling National Cemetery,Massachusetts National Cemetery,New Jersey Veterans Memorial Cemetery,South Florida National Cemetery
+tf-idf filtered answers:
+['Arlington National Cemetery', 'National Memorial Cemetery of the Pacific', 'Fort Rosecrans National Cemetery', 'Woodlawn National Cemetery', 'Calverton National Cemetery', 'Los Angeles National Cemetery', 'Fort Snelling National Cemetery', 'Massachusetts National Cemetery', 'New Jersey Veterans Memorial Cemetery', 'South Florida National Cemetery']
+Correct
+In 2009: Joker on film
+['heath ledger']
+LLM generated answers:
+The Hangover,Up in the Air,Avatar,Inglourious Basterds,Precious,The Hurt Locker,Julie & Julia,The Blind Side,Star Trek,The Messenger
+tf-idf filtered answers:
+['Star Trek', 'Avatar']
+It was the peninsula fought over in the peninsular war of 1808 to 1814
+['iberia', 'iberian peninsula']
+LLM generated answers:
+Iberian Peninsula,Spain,Portugal,Peninsular War,Battle of Salamanca,Battle of Vitoria,Battle of Talavera,Battle of Corunna,Napoleonic Wars,Spanish War of Independence
+tf-idf filtered answers:
+['Spain', 'Portugal', 'Iberian Peninsula', 'Napoleonic Wars']
+In 1980 China founded a center for these cute creatures in its bamboo-rich Wolong Nature Preserve
+['panda', 'giant panda']
+LLM generated answers:
+Giant Panda,Chinese Giant Panda,Panda,Endangered Species,Wildlife Conservation,Bamboo Forests,Conservation Biology,Species Recovery,Wildlife Reserves,Animal Sanctuaries
+tf-idf filtered answers:
+['Panda', 'Endangered Species']
+Correct
+1988: "Father Figure"
+['george michael']
+LLM generated answers:
+George Michael,Wham!,Michael Jackson,Prince,Whitney Houston,Janet Jackson,Phil Collins,Bon Jovi,New Kids on the Block,Richard Marx
+tf-idf filtered answers:
+['George Michael', 'Michael Jackson', 'Whitney Houston', 'Janet Jackson', 'Bon Jovi', 'Richard Marx']
+Correct
+In an essay defending this 2011 film, Myrlie Evers-Williams said, "My mother was" this film "& so was her mother"
+['the help']
+LLM generated answers:
+The Help,The Color Purple,Hidden Figures,Selma,12 Years a Slave,The Butler,For Colored Girls,The Secret Life of Bees,The Immortal Life of Henrietta Lacks,The Last Black Man in San Francisco
+tf-idf filtered answers:
+['The Help', 'Selma']
+Correct
+Father Michael McGivney founded this fraternal society for Catholic laymen in 1882
+['knights of columbus']
+LLM generated answers:
+Knights of Columbus,Knights of St. Columba,Order of the Knights of Columbus,Knights of Malta,Knights of the Holy Sepulchre,Knights of the Round Table,Knights of the Golden Spur,Knights of the Order of St. John,Knights of the Order of the Garter,Knights of the Order of the Bath
+tf-idf filtered answers:
+['Knights of Columbus']
+Correct
+Early projects of the WWF, this organization, included work with the bald eagle & the red wolf
+['world wide fund', 'world wide fund for nature']
+LLM generated answers:
+World Wildlife Fund,WWF,International Union for Conservation of Nature,Conservation International,The Nature Conservancy,Wildlife Conservation Society,Greenpeace,Fauna & Flora International,Wildlife Trusts,Earthwatch Institute
+tf-idf filtered answers:
+['International Union for Conservation of Nature']
+Indonesia's largest lizard, it's protected from poachers, though we wish it could breathe fire to do the job itself
+['komodo dragon']
+LLM generated answers:
+Komodo dragon,Varanus komodoensis,Komodo National Park,Indonesia,Endangered species,Wildlife conservation,Reptiles,Flora and fauna of Indonesia,Conservation status,Species protection
+tf-idf filtered answers:
+['Indonesia', 'Komodo dragon']
+Nov. 28, 1929! This man & his chief pilot Bernt Balchen fly to South Pole! Yowza! You'll be an admirable admiral, sir!
+['richard byrd', 'richard e. byrd']
+LLM generated answers:
+Richard E. Byrd,Bernt Balchen,USS Bear,Antarctic Expedition,Operation Highjump,Operation Deep Freeze,United States Antarctic Program,Admiral Byrd,Byrd Station,Little America
+tf-idf filtered answers:
+['Richard E. Byrd', 'Bernt Balchen', 'USS Bear', 'Antarctic Expedition', 'Operation Highjump', 'Operation Deep Freeze', 'United States Antarctic Program', 'Admiral Byrd', 'Byrd Station', 'Little America']
+Correct
+On May 5, 1878 Alice Chambers was the last person buried in this Dodge City, Kansas cemetery
+['boot hill']
+LLM generated answers:
+Boot Hill Cemetery,Old Boot Hill Cemetery,Dodge City Cemetery,Calvary Cemetery,Maple Grove Cemetery,Elmwood Cemetery,Greenwood Cemetery,Highland Cemetery,Sunset Memorial Gardens,Memorial Park Cemetery
+tf-idf filtered answers:
+['Boot Hill Cemetery', 'Old Boot Hill Cemetery', 'Dodge City Cemetery', 'Calvary Cemetery', 'Maple Grove Cemetery', 'Elmwood Cemetery', 'Greenwood Cemetery', 'Highland Cemetery', 'Sunset Memorial Gardens', 'Memorial Park Cemetery']
+The Royal Palace grounds feature a statue of King Norodom, who in the late 1800s was compelled to first put his country under the control of this European power; of course, it was sculpted in that country
+['france']
+LLM generated answers:
+France,Colonial history of Cambodia,History of Cambodia,King Norodom,Khmer Empire,Indochina,Siem Reap,Phnom Penh,Cambodian culture,Cambodian architecture
+tf-idf filtered answers:
+['France', 'History of Cambodia', 'Siem Reap']
+Correct
+In the 400s B.C. this Chinese philosopher went into exile for 12 years
+['confucius']
+LLM generated answers:
+Confucius,Laozi,Mozi,Zhuangzi,Xunzi,Han Feizi,Sun Tzu,Confucianism,Taoism,Legalism
+tf-idf filtered answers:
+['Confucianism', 'Confucius', 'Laozi', 'Legalism']
+Bessie Coleman, the first black woman licensed as a pilot, landed a street named in her honor at this Chicago airport
+["o'hare", "o'hare international airport"]
+LLM generated answers:
+Chicago Midway International Airport,Chicago O'Hare International Airport,Chicago Executive Airport,Meigs Field,Pal-Waukee Airport,DuPage Airport,Rockford International Airport,Midway Airport,Chicago Air Park,South Chicago Airport
+tf-idf filtered answers:
+['Chicago Midway International Airport']
+The Ammonites held sway in this Mideast country in the 1200s B.C. & the capital is named for them
+['jordan']
+LLM generated answers:
+Jordan,Ammon,Ammonite,Petra,Jerash,Dead Sea,Middle East,Arabian Peninsula,Ancient Near East,Hashemite Kingdom of Jordan
+tf-idf filtered answers:
+['Jordan', 'Petra']
+Correct
+"The Sum of All Fears"; he also won a screenwriting Oscar for "Good Will Hunting"
+['ben affleck']
+LLM generated answers:
+Ben Affleck,Harrison Ford,Chris Pine,John Krasinski,Tom Clancy,The Sum of All Fears,Jack Ryan,Good Will Hunting,Screenwriting,Oscar
+tf-idf filtered answers:
+['Ben Affleck', 'Harrison Ford', 'Oscar']
+Correct
+One of the N.Y. Times' headlines on this landmark 1973 Supreme Court decision was "Cardinals shocked"
+['roe v. wade']
+LLM generated answers:
+Roe v. Wade,Supreme Court of the United States,Abortion in the United States,Women's rights in the United States,Planned Parenthood v. Casey,Legal history of abortion in the United States,History of reproductive rights in the United States,Judicial activism in the United States,Constitutional law in the United States,Privacy rights in the United States
+tf-idf filtered answers:
+['Roe v. Wade', 'Planned Parenthood v. Casey']
+Correct
+France's Philip IV--known as "The Fair"--had Jacques De Molay, the last Grand Master of this order, burned in 1314
+['knights templar']
+LLM generated answers:
+Knights Templar,Order of the Knights Templar,Templar Order,Knights of the Temple,Order of Christ,Templar Knights,Knights of the Temple of Solomon,Order of the Temple,Templar,Knights of the Temple of Jerusalem
+tf-idf filtered answers:
+['Knights Templar']
+Correct
+The Georgia O'Keeffe Museum
+['new mexico']
+LLM generated answers:
+New Mexico,Georgia,Texas,Arizona,California,Colorado,Oklahoma,Utah,Nevada,Wyoming
+tf-idf filtered answers:
+['Oklahoma', 'New Mexico', 'California', 'Colorado', 'Wyoming', 'Nevada']
+The name of this largest Moroccan city combines 2 Spanish words
+['casablanca']
+LLM generated answers:
+Casablanca,Marraquech,Rabat,Agadir,Tangier,Fes,Salé,Essaouira,Oujda,Kenitra
+tf-idf filtered answers:
+['Casablanca', 'Agadir', 'Rabat']
+Correct
+Jell-O
+['kraft foods']
+LLM generated answers:
+Kraft Heinz,General Foods,Post Holdings,Unilever,ConAgra Foods,General Mills,PepsiCo,Campbell Soup Company,Mondelez International,Danone
+tf-idf filtered answers:
+['General Mills']
+2011: Chicago mayor Tom Kane
+['kelsey grammer']
+LLM generated answers:
+Kelsey Grammer,Best Actor in a Television Series – Drama,2011 Golden Globe Awards,Chicago,The Chicago Code,The Good Wife,The West Wing,Frasier,Cheers,The Simpsons
+tf-idf filtered answers:
+['Kelsey Grammer', 'Cheers', 'The West Wing', 'Chicago']
+Correct
+Title residence of Otter, Flounder, Pinto & Bluto in a 1978 comedy
+['animal house']
+LLM generated answers:
+Animal House,Delta House,University of Oregon,National Lampoon's Animal House,College fraternity,John Belushi,1978 films,Comedy films,American comedies,Film adaptations
+tf-idf filtered answers:
+['Animal House', 'University of Oregon', 'John Belushi']
+Correct
+Neurobiologist Amy Farrah Fowler on "The Big Bang Theory", in real life she has a Ph.D. in neuroscience from UCLA
+['mayim bialik']
+LLM generated answers:
+Mayim Bialik,James Franco,Jack Black,Angela Kinsey,Queen Latifah,Heather Graham,John Williams,Marissa Tomei,George Takei,Robbie Amell
+tf-idf filtered answers:
+['Mayim Bialik', 'Queen Latifah', 'Heather Graham', 'George Takei']
+Correct
+In "The Deadlocked Election of 1800", James R. Sharp outlines the fall of this dueling vice president
+['aaron burr']
+LLM generated answers:
+Aaron Burr,Thomas Jefferson,George Clinton,John Adams,James Madison,Alexander Hamilton,Charles C. Pinckney,Elbridge Gerry,John Jay,James Monroe
+tf-idf filtered answers:
+['Aaron Burr']
+Correct
+He served in the KGB before becoming president & then prime minister of Russia
+['vladimir putin', 'putin']
+LLM generated answers:
+Vladimir Putin,KGB,President of Russia,Prime Minister of Russia,Russian Federation,FSB,United Russia,Cold War,Post-Soviet Russia,Political career of Vladimir Putin
+tf-idf filtered answers:
+['Vladimir Putin', 'Russian Federation']
+Correct
+When asked to describe herself, she says first & foremost, she is Malia & Sasha's mom
+['michelle obama']
+LLM generated answers:
+Michelle Obama,Shirley Chisholm,Harriet Tubman,Sojourner Truth,Zora Neale Hurston,Ida B. Wells,Angela Davis,Marian Anderson,Oprah Winfrey,Kamala Harris
+tf-idf filtered answers:
+['Michelle Obama', 'Harriet Tubman', 'Zora Neale Hurston', 'Marian Anderson', 'Angela Davis']
+Correct
+She wrote, "My candle burns at both ends... but, ah, my foes, and oh, my friends--it gives a lovely light"
+['edna st. vincent millay']
+LLM generated answers:
+Edna St. Vincent Millay,American poets,Modernist poetry,Poetry of the United States,20th-century poets,Women poets,Poets from Maine,Sonnet,The Ballad of the Harp-Weaver,Renascence
+tf-idf filtered answers:
+['Edna St. Vincent Millay']
+Correct
+In this Finnish city, the Lutheran Cathedral, also known as Tuomiokirkko
+['helsinki']
+LLM generated answers:
+Helsinki,Finland,Tuomiokirkko,Evangelical Lutheran Church of Finland,Senate Square,Finlandia Hall,National Museum of Finland,Temppeliaukio Church,Church of the Cross,St. John's Church
+tf-idf filtered answers:
+['Helsinki']
+Correct
+Milton Bradley games
+['hasbro']
+LLM generated answers:
+Hasbro,Mattel,Spin Master,Playmobil,LEGO Group,Tomy,Playmates Toys,Jakks Pacific,Funko,Bandai Namco Entertainment
+tf-idf filtered answers:
+['Hasbro', 'Mattel', 'Funko']
+Correct
+The Kentucky & Virginia resolutions were passed to protest these controversial 1798 acts of Congress
+['the alien and sedition acts']
+LLM generated answers:
+Alien and Sedition Acts,United States Congress,First Amendment,Freedom of Speech,Freedom of the Press,Political Repression,Constitutional Law,State Rights,Judicial Review,Thomas Jefferson
+tf-idf filtered answers:
+['Alien and Sedition Acts', 'United States Congress', 'First Amendment', 'Freedom of Speech', 'Freedom of the Press', 'Political Repression', 'Constitutional Law', 'State Rights', 'Judicial Review', 'Thomas Jefferson']
+1983: "Beat It"
+['michael jackson']
+LLM generated answers:
+Michael Jackson,Prince,Whitney Houston,Madonna,Phil Collins,Bon Jovi,George Michael,Hall & Oates,The Police,Journey
+tf-idf filtered answers:
+['Michael Jackson', 'Whitney Houston', 'Madonna', 'Bon Jovi', 'George Michael', 'Hall & Oates', 'The Police', 'Journey']
+Correct
+In 2009: Sookie Stackhouse
+['anna paquin']
+LLM generated answers:
+Anna Paquin,True Blood,Golden Globe Awards,2009 Golden Globe Awards,Best Actress in a Television Series – Drama,Best Performance by an Actress in a Television Series – Drama,Television series,American television series,Fantasy television series,Drama series
+tf-idf filtered answers:
+['Anna Paquin', 'True Blood']
+Correct
+This member of the Nixon & Ford cabinets was born in Furth, Germany in 1923
+['henry kissinger']
+LLM generated answers:
+Henry Kissinger,Richard Nixon,Gerald Ford,United States Secretary of State,United States National Security Advisor,Cold War,Realpolitik,Foreign policy of the United States,American diplomats,Political realignment
+tf-idf filtered answers:
+['Henry Kissinger', 'Foreign policy of the United States', 'Realpolitik', 'Richard Nixon']
+Correct
+The High Kirk of St. Giles, where John Knox was minister
+['edinburgh']
+LLM generated answers:
+Edinburgh,London,Dublin,Oslo,Stockholm,Helsinki,Budapest,Prague,Belgrade,Riga
+tf-idf filtered answers:
+['Edinburgh', 'London', 'Oslo', 'Budapest', 'Stockholm', 'Riga', 'Helsinki']
+Correct
+For the brief time he attended, he was a rebel with a cause, even landing a lead role in a 1950 stage production
+['james dean']
+LLM generated answers:
+James Franco,Jack Black,Mayim Bialik,Heather Graham,Tim Robbins,John Williams,George Takei,Marissa Tomei,Angela Bassett,Richard Kind
+tf-idf filtered answers:
+['George Takei', 'Tim Robbins', 'Heather Graham', 'Mayim Bialik']
+Fisher-Price toys
+['mattel']
+LLM generated answers:
+Mattel,Hasbro,LEGO Group,Spin Master,Playmobil,Jakks Pacific,Tomy,Melissa & Doug,Bandai,Schleich
+tf-idf filtered answers:
+['Mattel', 'Hasbro']
+Correct
+In a 1959 American kitchen exhibit in Moscow, he told Khrushchev, "In America, we like to make life easier for women"
+['richard nixon', 'nixon']
+LLM generated answers:
+Richard Nixon,John F. Kennedy,George H. W. Bush,Harry S. Truman,Lyndon B. Johnson,Franklin D. Roosevelt,Theodore Roosevelt,Woodrow Wilson,Calvin Coolidge,Herbert Hoover
+tf-idf filtered answers:
+['Richard Nixon', 'Woodrow Wilson', 'Herbert Hoover', 'Calvin Coolidge']
+Correct
+One of his "Tales of a Wayside Inn" begins, "Listen, my children, and you shall hear of the midnight ride of Paul Revere"
+['henry wadsworth longfellow']
+LLM generated answers:
+Henry Wadsworth Longfellow,Paul Revere,The Midnight Ride of Paul Revere,Tales of a Wayside Inn,American poetry,19th-century poetry,Romanticism in the United States,New England poetry,Longfellow's works,American literature
+tf-idf filtered answers:
+['Henry Wadsworth Longfellow', 'Paul Revere']
+Correct
+This bestseller about problems on the McCain-Palin ticket became an HBO movie with Julianne Moore
+['game change']
+LLM generated answers:
+Game Change,The New York Times,The Washington Post,Julianne Moore,Mark Halperin,John Heilemann,HBO,Political fiction,2012 films,American biographical films
+tf-idf filtered answers:
+['Game Change', 'The Washington Post']
+Correct
+A 2-part episode of "JAG" introduced this Mark Harmon drama
+['ncis']
+LLM generated answers:
+NCIS,Mark Harmon,Naval Criminal Investigative Service,JAG,American television series,2003 television series debuts,Military drama,Crime drama,Procedural drama,Action drama
+tf-idf filtered answers:
+['NCIS']
+Correct
+This port is the southernmost of South Africa's 3 capitals
+['cape town']
+LLM generated answers:
+Cape Town, Pretoria, Bloemfontein, Durban, Johannesburg, Port Elizabeth, East London, Kimberley, Nelspruit, Polokwane
+tf-idf filtered answers:
+['Cape Town', 'Johannesburg', 'Bloemfontein', 'Port Elizabeth', 'Polokwane']
+Correct
+Keats was quoting this Edmund Spenser poem when he told Shelley to "'load every rift' of your subject with ore"
+['the faerie queene']
+LLM generated answers:
+The Faerie Queene,Epithalamion,Amoretti,The Shepherd's Calendar,The Complaints,The Ruins of Time,The Teares of the Muses,The Visions of Bellay,The Legend of Sir Guy,The Dying Words of the Muses
+tf-idf filtered answers:
+['The Faerie Queene']
+Correct
+In an 1819 letter Keats wrote that this lord & poet "cuts a figure, but he is not figurative"
+['lord byron']
+LLM generated answers:
+Lord Byron,George Gordon Byron,Byron,George Byron,Byron the poet,Byron the lord,The Lord Byron,Byron of the Isles,Byron of England,Byron the Romantic
+tf-idf filtered answers:
+['Lord Byron']
+Correct
+This clear Greek liqueur is quite potent, so it's usually mixed with water, which turns it white & cloudy
+['ouzo']
+LLM generated answers:
+Ouzo,Tsipouro,Raki,Mastika,Metaxa,Greek coffee,Greek wine,Retsina,Tsikoudia,Frappé coffee
+tf-idf filtered answers:
+['Ouzo', 'Tsipouro']
+Correct
+Feb. 1, National Freedom Day, is the date in 1865 when a resolution sent the states an amendment ending this
+['slavery', 'slavery in the united states']
+LLM generated answers:
+Slavery,Thirteenth Amendment,Emancipation Proclamation,American Civil War,Reconstruction Era,Freedmen's Bureau,Union Army,Confederate States of America,Lincoln's Assassination,Radical Republicans
+tf-idf filtered answers:
+['Emancipation Proclamation', 'Confederate States of America']
+This person is the queen's representative in Canada; currently the office is held by David Johnston
+['governor general of canada']
+LLM generated answers:
+Governor General of Canada,David Johnston,Queen's representative in Canada,Canadian Governor General,Governor General,Canada,David Johnston (politician),List of Governors General of Canada,Office of the Governor General of Canada,Governor General's residence
+tf-idf filtered answers:
+['Governor General of Canada']
+Correct
+He earned the "fifth Beatle" nickname by producing all of the Beatles' albums
+['george martin']
+LLM generated answers:
+George Martin,The Beatles,Abbey Road,Let It Be,Sgt. Pepper's Lonely Hearts Club Band,Revolver,Help!,Rubber Soul,Magical Mystery Tour,Yellow Submarine
+tf-idf filtered answers:
+["Sgt. Pepper's Lonely Hearts Club Band", 'Rubber Soul', 'George Martin', 'Revolver']
+Early in their careers, Mark Twain & Bret Harte wrote pieces for this California city's Chronicle
+['san francisco']
+LLM generated answers:
+San Francisco Chronicle,Los Angeles Times,San Diego Union-Tribune,The Sacramento Bee,The San Francisco Examiner,The Orange County Register,The Press-Enterprise,The Modesto Bee,The Bakersfield Californian,The Santa Rosa Press Democrat
+tf-idf filtered answers:
+['Los Angeles Times']
+Large specimens of this marsupial can leap over barriers 6 feet high
+['kangaroo']
+LLM generated answers:
+Red kangaroo,Eastern grey kangaroo,Western grey kangaroo,Antilopine kangaroo,Tree kangaroo,Wallaby,Quokka,Wallaroo,Rock wallaby,Common brushtail possum
+tf-idf filtered answers:
+['Wallaby']
+Because it's cured & stored in brine, this crumbly white cheese made from sheep's milk is often referred to as pickled cheese
+['feta']
+LLM generated answers:
+Feta cheese,Manouri,Halloumi,Teleme,Anari,Kaseri,Graviera,Myzithra,Labneh,Chaloumi
+tf-idf filtered answers:
+['Feta cheese', 'Manouri', 'Halloumi', 'Teleme', 'Anari', 'Kaseri', 'Graviera', 'Myzithra', 'Labneh', 'Chaloumi']
+1927! Gene Tunney takes a long count in the squared circle but rises to defeat this "Manassa Mauler"! Howzabout that!
+['jack dempsey']
+LLM generated answers:
+Jack Dempsey,Gene Tunney,Boxing,1927 in sports,Heavyweight boxing champions,Manassa Mauler,American boxing,History of boxing,Boxing matches,Boxing rivalries
+tf-idf filtered answers:
+['Jack Dempsey', '1927 in sports']
+Correct
+Italian for "leader", it was especially applied to Benito Mussolini
+['duce']
+LLM generated answers:
+Duce,Benito Mussolini,Italian Fascism,Italian language,Totalitarianism,History of Italy,World War II,Axis powers,Fascism,Political titles
+tf-idf filtered answers:
+['History of Italy', 'World War II', 'Duce', 'Italian language']
+The Kalamazoo Institute of Arts
+['michigan']
+LLM generated answers:
+Michigan,California,New York,Texas,Florida,Illinois,Ohio,Pennsylvania,Massachusetts,Washington
+tf-idf filtered answers:
+['Florida', 'Illinois', 'Michigan', 'California', 'Ohio']
+The Sun Valley Center for the Arts
+['idaho']
+LLM generated answers:
+Idaho,California,New York,Texas,Florida,Illinois,Washington,Massachusetts,Virginia,Colorado
+tf-idf filtered answers:
+['Idaho', 'Virginia', 'California', 'Colorado', 'Illinois', 'Florida']
+Correct
+You can't mention this shortstop without mentioning his double-play associates Evers & Chance
+['joe tinker']
+LLM generated answers:
+Joe Tinker,Johnny Evers,Frank Chance,Chicago Cubs,National League,Baseball Hall of Fame,1906 World Series,1907 World Series,1910 World Series,Double play
+tf-idf filtered answers:
+['Chicago Cubs', 'Joe Tinker', 'National League', 'Double play']
+In 1840 Horace Greeley began publishing "The Log Cabin", a weekly campaign paper in support of this Whig candidate
+['william henry harrison']
+LLM generated answers:
+William Henry Harrison,Zachary Taylor,Millard Fillmore,John Tyler,James Buchanan,Abraham Lincoln,Franklin Pierce,Calvin Coolidge,Chester A. Arthur,Herbert Hoover
+tf-idf filtered answers:
+['William Henry Harrison', 'Herbert Hoover', 'Calvin Coolidge']
+Correct
+Pierre Cauchon, Bishop of Beauvais, presided over the trial of this woman who went up in smoke May 30, 1431
+['joan of arc', "jeanne d'arc"]
+LLM generated answers:
+Joan of Arc,Trial of Joan of Arc,Execution of Joan of Arc,Martyrdom of Joan of Arc,History of Joan of Arc,Joan of Arc in popular culture,Joan of Arc's trial,Joan of Arc's legacy,Joan of Arc's visions,Joan of Arc's military campaigns
+tf-idf filtered answers:
+['Joan of Arc']
+Correct
+This Wisconsin city claims to have built the USA's only granite dome
+['madison']
+LLM generated answers:
+Ashland, Wisconsin,Granite Dome,Granite,USA,City,Architecture,Landmark,History,Geography,Midwest
+tf-idf filtered answers:
+['Ashland', 'Wisconsin', 'City']
+This Georgia paper is known as the AJC for short
+['the atlanta journal-constitution']
+LLM generated answers:
+Atlanta Journal-Constitution,AJC,Atlanta Constitution,Atlanta Journal,Georgia newspapers,Atlanta news,AJC.com,Atlanta media,Georgia news,Atlanta publications
+tf-idf filtered answers:
+['Atlanta Constitution', 'Atlanta Journal', 'AJC']
+Wooden 2-story verandas in this Liberian capital are an architectural link to the U.S. south
+['monrovia']
+LLM generated answers:
+Monrovia,Robertsport,Gbarnga,Buchanan,Harper,Voinjama,Zwedru,Sinoe,Tapita,Bong
+tf-idf filtered answers:
+['Monrovia', 'Bong', 'Buchanan']
+Correct
+This New Orleans venue reopened Sept. 25, 2006
+['mercedes-benz superdome', 'the superdome']
+LLM generated answers:
+The Saenger Theatre,The Orpheum Theatre,The Joy Theater,The Civic Theatre,The Mahalia Jackson Theater,The House of Blues New Orleans,The Tipitina's,The Maple Leaf Bar,The Howlin' Wolf,The New Orleans Jazz & Heritage Festival
+tf-idf filtered answers:
+['The Saenger Theatre', 'The Orpheum Theatre', 'The Joy Theater', 'The Civic Theatre', 'The Mahalia Jackson Theater', 'The House of Blues New Orleans', "The Tipitina's", 'The Maple Leaf Bar', "The Howlin' Wolf", 'The New Orleans Jazz & Heritage Festival']
+"The Hunt for Red October"; he went more comedic as Jack Donaghy on "30 Rock"
+['alec baldwin']
+LLM generated answers:
+Alec Baldwin,The Hunt for Red October,30 Rock,Jack Ryan,The Departed,Beetlejuice,The Aviator,The Cooler,Glengarry Glen Ross,The Edge
+tf-idf filtered answers:
+['Alec Baldwin']
+Correct
+Rita Dove titled a collection of poems "On the Bus with" this woman
+['rosa parks']
+LLM generated answers:
+Gwendolyn Brooks,Zora Neale Hurston,Audre Lorde,Nikki Giovanni,Alice Walker,Marilyn Nelson,Lucille Clifton,Angela Davis,Paula Giddings,Michelle Obama
+tf-idf filtered answers:
+['Zora Neale Hurston', 'Angela Davis', 'Michelle Obama']
+"Patriot Games"; he's had other iconic roles, in space & underground
+['harrison ford']
+LLM generated answers:
+Harrison Ford,Clear and Present Danger,The Fugitive,Star Wars,Indiana Jones,Blade Runner,The Mosquito Coast,What Lies Beneath,The Call of the Wild,Air Force One
+tf-idf filtered answers:
+['Star Wars', 'Indiana Jones', 'Harrison Ford', 'Air Force One', 'The Call of the Wild']
+This sacred structure dates from the late 600's A.D.
+['dome of the rock']
+LLM generated answers:
+Hagia Sophia,Great Mosque of Samarra,Shwedagon Pagoda,Temple of the Emerald Buddha,St. Peter's Basilica,Parthenon,Angkor Wat,Chichen Itza,Notre-Dame de Paris,Meenakshi Amman Temple
+tf-idf filtered answers:
+['Chichen Itza', 'Notre Dame de Paris']
+1988: "Man In The Mirror"
+['michael jackson']
+LLM generated answers:
+Michael Jackson,George Michael,Whitney Houston,Prince,Janet Jackson,Phil Collins,Bon Jovi,George Harrison,David Bowie,Elton John
+tf-idf filtered answers:
+['Michael Jackson', 'George Michael', 'Whitney Houston', 'Janet Jackson', 'Bon Jovi']
+Correct
+Matthias Church, or Matyas Templom, where Franz Joseph was crowned in 1867
+['budapest']
+LLM generated answers:
+Budapest,Vienna,Bucharest,Prague,Bratislava,Stockholm,Tallinn,Riga,Oslo,Helsinki
+tf-idf filtered answers:
+['Bratislava', 'Budapest', 'Oslo', 'Stockholm', 'Bucharest', 'Riga', 'Helsinki']
+Attending UCLA in the '60s, he was no "Meathead", he just played one later on television
+['rob reiner']
+LLM generated answers:
+Rob Reiner,Marcia Clark,James Franco,Jack Black,George Takei,Angela Bassett,John Williams,Mayim Bialik,Richard Dreyfuss,Queen Latifah
+tf-idf filtered answers:
+['George Takei', 'Richard Dreyfuss', 'Rob Reiner', 'Queen Latifah', 'Mayim Bialik']
+Kinch, Carter & LeBeau were all residents of Stalag 13 on this TV show
+["hogan's heroes"]
+LLM generated answers:
+Hogan's Heroes,Bob Crane,Richard Dawson,John Banner,Robert Clary,Leonard Nimoy,Werner Klemperer,Robert Hogan,Sergeant Schultz,Colonel Klink
+tf-idf filtered answers:
+["Hogan's Heroes", 'Bob Crane']
+Correct
+News flash! This less-than-yappy pappy is sixth veep to be nation's top dog after chief takes deep sleep!
+['calvin coolidge']
+LLM generated answers:
+Calvin Coolidge,1923 United States presidential inauguration,1924 United States presidential election,1925 United States presidential election,1926 United States presidential election,1927 United States presidential election,1928 United States presidential election,1929 United States presidential election,Herbert Hoover,Alfred E. Smith
+tf-idf filtered answers:
+['Herbert Hoover', 'Calvin Coolidge', 'Alfred E. Smith']
+In 2001: The president of the United States on television
+['martin sheen']
+LLM generated answers:
+The West Wing,The American President,The Candidate,The Contender,The Newsroom,Designated Survivor,Veep,House of Cards,Scandal,Political Animals
+tf-idf filtered answers:
+['The West Wing', 'Scandal']
+1989: "Miss You Much"
+['janet jackson']
+LLM generated answers:
+Janet Jackson,Michael Jackson,Prince,Whitney Houston,George Michael,Phil Collins,Bon Jovi,New Kids on the Block,Madonna,Vanilla Ice
+tf-idf filtered answers:
+['Janet Jackson', 'Michael Jackson', 'Whitney Houston', 'Bon Jovi', 'George Michael', 'Madonna']
+Correct
+1922: It's the end of an empire! This empire, in fact! After 600 years, it's goodbye, this, hello, Turkish Republic!
+['ottoman empire']
+LLM generated answers:
+Ottoman Empire,Turkish Republic,Republic of Turkey,Turkey,End of the Ottoman Empire,History of Turkey,Modern Turkey,Atatürk,1922 in Turkey,Turkish War of Independence
+tf-idf filtered answers:
+['Ottoman Empire', 'Republic of Turkey']
+Correct
+Crest toothpaste
+['procter & gamble']
+LLM generated answers:
+Procter & Gamble,Colgate-Palmolive,Unilever,Johnson & Johnson,Reckitt Benckiser,Henkel,Church & Dwight,GlaxoSmithKline,Pepsico,Kimberly-Clark
+tf-idf filtered answers:
+['Procter & Gamble']
+Correct
+In 1888 this Chancellor told the Reichstag, "we Germans fear God, but nothing else in the world"
+['otto von bismarck', 'von bismarck']
+LLM generated answers:
+Otto von Bismarck,German Empire,Reichstag,Chancellor of Germany,Prussia,Franco-Prussian War,Realpolitik,Socialist Laws,Alliance System,Second Reich
+tf-idf filtered answers:
+['Otto von Bismarck', 'Realpolitik', 'Reichstag']
+Correct
+In 1787 he signed his first published poem "Axiologus"; axio- is from the Greek for "worth"
+['william wordsworth']
+LLM generated answers:
+William Blake,Robert Burns,William Wordsworth,John Keats,Samuel Taylor Coleridge,Emily Dickinson,Langston Hughes,T.S. Eliot,Ezra Pound,Wallace Stevens
+tf-idf filtered answers:
+['Ezra Pound', 'William Blake', 'John Keats', 'Emily Dickinson', 'William Wordsworth', 'T.S. Eliot']
+Not to be confused with karma, krama is a popular accessory sold in cambodia; the word means "scarf" in this national language of Cambodia
+['khmer language']
+LLM generated answers:
+Khmer,Khmer language,Cambodian language,Cambodia,Khmer culture,Khmer script,Khmer people,Khmer Rouge,Khmer architecture,Khmer cuisine
+tf-idf filtered answers:
+['Khmer Rouge', 'Khmer architecture', 'Khmer language', 'Cambodian language']
+Phnom Penh's notorious gridlock is circumvented by the nimble tuk-tuk, a motorized taxi that's also known as an auto this, a similar Asian conveyance.
+['rickshaw']
+LLM generated answers:
+rickshaw,auto rickshaw,tuk-tuk,cycle rickshaw,three-wheeler,auto,shared taxi,passenger tricycle,mini taxi,public transport
+tf-idf filtered answers:
+['rickshaw', 'auto rickshaw', 'tuk tuk', 'cycle rickshaw', 'three wheeler', 'auto', 'shared taxi', 'passenger tricycle', 'mini taxi', 'public transport']
+Correct
+1980: "Rock With You"
+['michael jackson']
+LLM generated answers:
+Michael Jackson,Kenny Loggins,Queen,Blondie,The Police,Prince,Hall & Oates,Journey,David Bowie,Air Supply
+tf-idf filtered answers:
+['Michael Jackson', 'The Police', 'Hall & Oates', 'Air Supply', 'Kenny Loggins', 'Journey']
+Correct
+The Pulitzer-winning "The Making of the President 1960" covered this man's successful presidential campaign
+['jfk', 'john f. kennedy']
+LLM generated answers:
+John F. Kennedy,The Making of the President 1960,Richard Nixon,1960 United States presidential election,John F. Kennedy presidential campaign,American presidential campaigns,Presidential elections in the United States,Political campaigns in the United States,History of the United States (1960s),Campaign literature
+tf-idf filtered answers:
+['Richard Nixon']
+In 1843 Isaac Dittenhoefer became the first pres. of this Jewish club whose name means "children of the covenant"
+["b'nai b'rith"]
+LLM generated answers:
+B'nai B'rith,Jewish Community Centers,United Jewish Appeal,Hadassah,Chabad,Jewish Federation,Anti-Defamation League,Union for Reform Judaism,National Council of Jewish Women,World Jewish Congress
+tf-idf filtered answers:
+['Chabad', "B'nai B'rith"]
+Don Knotts took over from Norman Fell as the resident landlord on this sitcom
+["three's company"]
+LLM generated answers:
+Three's Company,Don Knotts,Norman Fell,John Ritter,Joyce DeWitt,Priscilla Barnes,Richard Kline,Audra Lindley,Don Knotts, sitcom
+tf-idf filtered answers:
+["Three's Company", 'John Ritter', 'Don Knotts', 'Don Knotts']
+Correct
+U.N. Res. 242 supports "secure and recognized boundaries" for Israel & neighbors following this June 1967 war
+['the six day war']
+LLM generated answers:
+Six-Day War,Arab-Israeli conflict,1967,Israel,Jordan,Syria,Egypt,Palestinian territories,Middle East,United Nations Security Council
+tf-idf filtered answers:
+['Syria', 'Jordan', '1967']
+This blonde beauty who reprised her role as Amanda on the new "Melrose Place" was a psychology major
+['heather locklear']
+LLM generated answers:
+Heather Locklear,Jamie Pressly,Kristin Cavallari,Shonda Rhimes,Queen Latifah,James Franco,Jack Black,Mayim Bialik,George Takei,Angela Kinsey
+tf-idf filtered answers:
+['Heather Locklear', 'George Takei', 'Queen Latifah', 'Mayim Bialik']
+Correct
+The name of this dish of marinated lamb, skewered & grilled, comes from the Greek for "skewer" & also starts with "s"
+['souvlaki']
+LLM generated answers:
+Souvlaki,Shish kebab,Satay,Shashlik,Souvlaki sauce,Souvlaki wrap,Souvlaki platter,Souvlaki skewers,Souvlaki marinade,Souvlaki recipe
+tf-idf filtered answers:
+['Souvlaki', 'Shish kebab']
+Correct
+Post-it notes
+['3m']
+LLM generated answers:
+3M,Scotch,3M Company,3M Corporation,3M Health Care,3M Industrial,3M Electronics,3M Safety,3M Construction,3M Consumer
+tf-idf filtered answers:
+['3M']
+Correct
+In 2010: As Sherlock Holmes on film
+['robert downey, jr.']
+LLM generated answers:
+Robert Downey Jr.,Johnny Depp,Daniel Day-Lewis,Colin Firth,Jeff Bridges,James Franco,Michael C. Hall,Matt Damon,Steve Carell,Leonardo DiCaprio
+tf-idf filtered answers:
+['Colin Firth']
+Precision: 0.59

@@ -9,6 +9,7 @@ from nltk.corpus import wordnet as wn
 import json
 from tqdm import tqdm
 from functools import lru_cache
+import os
 
 ps = PorterStemmer()
 
@@ -36,78 +37,33 @@ stop_words = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you"
 def cached_stem(token):
     return ps.stem(token)
 
+def get_file_names(path):
+    try:
+        return [os.path.join(path, f) for f in os.listdir(path)]
+    except FileNotFoundError:
+        return []
+
 class IRSystemSelector:
-    def __init__(self, files=None):
-        # Use lnc to weight terms in the documents:
-        #   l: logarithmic tf
-        #   n: no df
-        #   c: cosine normalization
-
-        # Store the vecorized representation for each document
-        #   and whatever information you need to vectorize queries in _run_query(...)
-
-        # YOUR CODE GOES HERE
+    def __init__(self):
+        pass
+        
+    def calc_weights(self, titles):
+        # Reset weights and counts
         self.weights = {}
         self.counts = {}
         self.titles = {}
-        #self.title_weights = {}
-        #self.title_counts = {}
-        
-        # Load in the weights and counts from JSON files
-        if files == None:
-            with open(weights_path) as file:
-                print("Loading Weights")
-                self.weights = json.load(file)
-            with open(counts_path) as file:
-                print("Loading Counts")
-                self.counts = json.load(file)   
-            # Get stemmed version of all the docIDs (titles) to compare with LLM results
-            for title in self.weights.keys():
-                # remove any stop words (so we don't fail to match a title if the only non-match is stop words)
-                filtered_title = [term for term in title.lower() if not term in set(stopwords.words('english'))]
-                #title_terms = [cached_stem(term) for term in filtered_title]
-                fixed_title = " ".join(filtered_title)
-                self.titles[fixed_title] = title
-                '''
-                # Old scoring titles stuff (get rid of if we abandon this path)
-                included = set()
-                curr_weights = {}
-                #stem_title = " ".join(title_terms)
-                #self.titles[stem_title] = title
-                for term in title_terms:
-                    if term not in included:
-                        tf = self.log_tf(term, title_terms)
-                        curr_weights[term] = tf
-                        included.add(term)
-                        if term in self.title_counts:
-                            self.title_counts[term] += 1
-                        else:
-                            self.title_counts[term] = 1
-                # now perform cosine normalization on all weights
-                weight_sum = 0
-                for weight in curr_weights:
-                    # first need sum of square of all weights
-                    weight_sum += (curr_weights[weight] ** 2)
-            
-                cosine_norm = math.sqrt(weight_sum)
-            
-                for item in curr_weights:
-                    curr_weights[item] /= cosine_norm
-            
-                self.title_weights[title] = curr_weights   # now add the weights
-                '''
-            return        # don't delete this!!!
 
-        # Parse file and calculate weights and counts
         file_count = 0
+        
+        names = get_file_names("data")
+        files = [open(f, encoding="utf-8", errors="ignore") for f in names]
         for f in files:
-            print(f"Working on file {file_count}")
             docID = None
             seen = set()
             lines = f.readlines()
-            for line in tqdm(lines):
+            for line in lines:
                 # Detect the title of the current document
-                if docID_pattern.match(line):
+                if docID_pattern.match(line) and line[2:-3] in titles:
                     # Check if prev was none
                     if docID != None and docID in self.weights:
                         # Calculate weights from term frequency for previous document
@@ -124,7 +80,12 @@ class IRSystemSelector:
 
                     docID = line[2:-3]
                     seen = set()
-                    continue                
+                    continue
+                # If we're on a title that is not in our set, set docID to none and skip it
+                elif docID_pattern.match(line) and docID != None:
+                    docID = None
+                    continue
+
                 
                 # If title not found yet
                 if (docID == None):
@@ -178,68 +139,21 @@ class IRSystemSelector:
             #title_terms = [cached_stem(term) for term in filtered_title]
             no_stop_words = " ".join(filtered_title)
             self.titles[no_stop_words] = title
-            '''
-            included = set()
-            curr_weights = {}
-            #stem_title = " ".join(title_terms)
-            #self.titles[stem_title] = title
-            for term in title_terms:
-                if term not in included:
-                    tf = self.log_tf(term, title_terms)
-                    curr_weights[term] = tf
-                    included.add(term)
-                    if term in self.title_counts:
-                        self.title_counts[term] += 1
-                    else:
-                        self.title_counts[term] = 1
-            # now perform cosine normalization on all weights
-            weight_sum = 0
-            for weight in curr_weights:
-                # first need sum of square of all weights
-                weight_sum += (curr_weights[weight] ** 2)
-            
-            cosine_norm = math.sqrt(weight_sum)
-            
-            for item in curr_weights:
-                curr_weights[item] /= cosine_norm
-            
-            self.title_weights[title] = curr_weights   # now add the weights
-            '''
-            
-       
 
-        with open(weights_path, "w") as file:
-            print("Writing to json file")
-            json.dump(self.weights, file, indent=4)
-        with open(counts_path, "w") as file:
-            print("Writing to json file")
-            json.dump(self.counts, file, indent=4)
-
-    '''
-    def log_tf(self, term, document):
-        # Calculates the logarithmic tf of a term given a document
-        count = 0
-        for token in document:
-            if token == term:
-                count += 1
-        if count == 0:
-            return 0
-        else:
-            return 1 + math.log(count, 10)
-    '''
 
     #def run_query(self, category, query):
     def run_query(self, query, top_ten):
         terms = query.strip().split()
-        # expanded = []
-        # for term in terms:
-        #     synset = wn.synsets(term)
-        #     if synset:
-        #         expanded.extend(synset[0].lemma_names())
-        #     else:
-        #         expanded.append(term)
-        # terms = list(set(expanded))
+        expanded = []
+        for term in terms:
+            synset = wn.synsets(term)
+            if synset:
+                expanded.extend(synset[0].lemma_names())
+            else:
+                expanded.append(term)
+        terms = list(set(expanded))
         terms = [cached_stem(term) for term in terms]
+        self.calc_weights(top_ten)
         # stem the top results provided by the LLM to match more possible titles
         #topic = category.strip().split()
         #topic = [cached_stem(word) for word in topic]
@@ -326,7 +240,7 @@ class IRSystemSelector:
         for term in terms:
             if term in self.counts:
                 # Duplicates in query
-                if (weights[term] < 0):
+                if (weights[term] <= 0):
                     continue
                 tf = 1 + math.log10(weights[term])
                 idf = math.log10(len(self.weights)/self.counts[term])
@@ -378,7 +292,9 @@ class IRSystemSelector:
             i += 1
 
         #result = result[:10]
-    
+
+        if len(result) == 0:
+            return top_ten
         return result
 
 

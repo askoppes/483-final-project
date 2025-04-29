@@ -71,6 +71,7 @@ for query in tqdm(queries):
     outputs = client.chat.completions.create(
     model="gpt-4o-mini",
     store=True,
+    temperature=0,
     messages=messages
     )
 
