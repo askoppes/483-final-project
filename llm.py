@@ -55,6 +55,8 @@ msg = "Provide a comma-separated list of the 10 best possible answers to the giv
 
 # file = open("answers.txt", "w")
 i = 0
+mrr_sum = 0
+
 for query in tqdm(queries):
     #result = ir.run_query(query[0], query[1])
     print(query["prompt"])
@@ -89,12 +91,31 @@ for query in tqdm(queries):
         # first answer given by the LLM is correct
         print('Correct')
         correct += 1
+    
+    lower_answers = []
+    for answer in filtered_answers:
+        lower_answers.append(answer.lower())
+    
+    index = 3000  # magic number impossible starting index (filtered_answers max length is 10)
+    for answer in query["answer"]:
+        if answer not in lower_answers:
+            continue
+        elif (lower_answers.index(answer) + 1) < index:
+            index = lower_answers.index(answer) + 1
+    
+    if index != 3000:
+        reciprocal = 1 / index
+        mrr_sum += reciprocal
+
     # file.write(f"{query[0]}\n{query[1]}\n{result}\n\n")
     i += 1
     with open("cur_question.txt", "w") as f:
         f.write(str(questions_to_skip+i) + "\n" + str(correct))
     
 print(f"Precision: {correct/100}")      # Precision = (# of correct answers retrieved) / (# total answers retrieved)
+
+mrr = (1 / i) * mrr_sum     # Note that MRR is calculated over the number of queries answered in this session, not necessarily always over 100
+print(f"Mean Reciprocal Rank: {mrr}")
 
 
 

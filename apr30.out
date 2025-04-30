@@ -1,0 +1,660 @@
+Loading LLM
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  3.16it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  5.20it/s]
+Device set to use cpu
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [01:33<2:33:58, 93.32s/it]  2%|▏         | 2/100 [02:26<1:54:03, 69.84s/it]  3%|▎         | 3/100 [03:37<1:53:28, 70.19s/it]  4%|▍         | 4/100 [04:52<1:55:37, 72.27s/it]  5%|▌         | 5/100 [06:15<2:00:28, 76.09s/it]  6%|▌         | 6/100 [07:37<2:02:05, 77.93s/it]  7%|▋         | 7/100 [08:56<2:01:40, 78.50s/it]  8%|▊         | 8/100 [10:26<2:05:50, 82.07s/it]  9%|▉         | 9/100 [11:42<2:01:34, 80.16s/it] 10%|█         | 10/100 [12:54<1:56:26, 77.63s/it] 11%|█         | 11/100 [14:18<1:58:07, 79.64s/it] 12%|█▏        | 12/100 [15:44<1:59:26, 81.43s/it] 13%|█▎        | 13/100 [17:06<1:58:25, 81.67s/it] 14%|█▍        | 14/100 [18:26<1:56:29, 81.27s/it] 15%|█▌        | 15/100 [19:59<2:00:00, 84.71s/it] 16%|█▌        | 16/100 [21:43<2:06:55, 90.67s/it] 17%|█▋        | 17/100 [22:54<1:57:13, 84.74s/it] 18%|█▊        | 18/100 [24:18<1:55:20, 84.39s/it] 19%|█▉        | 19/100 [25:45<1:54:54, 85.12s/it]The dominant paper in our nation's capital, it's among the top 10 U.S. papers in circulation
+['the washington post']
+LLM generated answers:
+The Washington Post, The New York Times, The Wall Street Journal, The Los Angeles Times, USA Today, The Boston Globe, The Chicago Tribune, The Philadelphia Inquirer, The Dallas Morning News, The Washington Times
+tf-idf filtered answers:
+['The Wall Street Journal', 'The Washington Post']
+The practice of pre-authorizing presidential use of force dates to a 1955 resolution re: this island near mainland China
+['taiwan']
+LLM generated answers:
+Taiwan
+tf-idf filtered answers:
+['Taiwan']
+Correct
+Daniel Hertzberg & James B. Stewart of this paper shared a 1988 Pulitzer for their stories about insider trading
+['the wall street journal']
+LLM generated answers:
+The New York Times, The Wall Street Journal, The New Yorker, Forbes, Bloomberg, Reuters, Financial Times, The Economist, Wall Street Journal, The Washington Post
+tf-idf filtered answers:
+['The Wall Street Journal', 'The Economist', 'The Washington Post', 'Bloomberg', 'Wall Street Journal']
+Correct
+Song that says, "you make me smile with my heart; your looks are laughable, unphotographable"
+['my funny valentine']
+LLM generated answers:
+West Side Story, My Favorite Things, On My Own, Somewhere, One Hand, Love Story, Smile, On the Street Where You Live, Not a Day Goes By, You Are Too Kind
+tf-idf filtered answers:
+['West Side Story']
+In 2011 bell ringers for this charity started accepting digital donations to its red kettle
+['the salvation army', 'salvation army']
+LLM generated answers:
+Salvation Army, Red Cross, Red Kettle, Salvation Army Red Kettle, Salvation Army, Red Kettle Campaign, Salvation Army USA, Salvation Army Red Kettle Drive, Salvation Army Red Kettle Bell Ringers, Salvation Army Red Kettle Charity
+tf-idf filtered answers:
+['Red Cross']
+The Naples Museum of Art
+['florida']
+LLM generated answers:
+Naples Museum of Art, Art Museum of Naples, Naples Art Museum, Museum of Art in Naples, The Naples Museum of Art, Art Museum, Naples Art Museum, The Art Museum of Naples, Museum of Naples Art, Naples Museum
+tf-idf filtered answers:
+['Naples Museum of Art', 'Art Museum of Naples', 'Naples Art Museum', 'Museum of Art in Naples', 'The Naples Museum of Art', 'Art Museum', 'Naples Art Museum', 'The Art Museum of Naples', 'Museum of Naples Art', 'Naples Museum']
+This Italian painter depicted the "Adoration of the Golden Calf"
+['tintoretto']
+LLM generated answers:
+Gentileschi, Artemisia, Caravaggio, Caravaggio, Caravaggio, Caravaggio, Caravaggio, Caravaggio, Caravaggio, Caravaggio
+tf-idf filtered answers:
+['Caravaggio']
+This woman who won consecutive heptathlons at the Olympics went to UCLA on a basketball scholarship
+['jackie joyner-kersee']
+LLM generated answers:
+Kerri Strug, Jackie Joyner-Kersee, Mary Lou Retton, Deena Kastor, Allyson Felix, Shannon Miller, Nadia Comăneci, Mary Decker Slaney, Irena Szewińska, Jackie Joyner
+tf-idf filtered answers:
+['Kerri Strug', 'Nadia Comăneci', 'Mary Lou Retton']
+Originally this club's emblem was a wagon wheel; now it's a gearwheel with 24 cogs & 6 spokes
+['rotary international']
+LLM generated answers:
+Scouting Organizations, Boy Scouts of America, Girl Scouts of the USA, YMCA, Rotary Club, Lions Clubs International, Optimist Club, 4-H, Boy Scouts of America, Campfire USA
+tf-idf filtered answers:
+['Boy Scouts of America', 'Lions Clubs International', 'YMCA']
+Several bridges, including El Tahrir, cross the Nile in this capital
+['cairo']
+LLM generated answers:
+Cairo, Giza, Alexandria, Port Said, Damietta, Ismailia, Monufia, Qalyubia, Gharbia, Kafr el Sheikh
+tf-idf filtered answers:
+['Cairo']
+Correct
+After the fall of France in 1940, this general told his country, "France has lost a battle. But France has not lost the war"
+['charles de gaulle', 'de gaulle']
+LLM generated answers:
+General de Gaulle, Charles de Gaulle, Free France, Vichy France, French Resistance, Philippe Pétain, Charles Noguès, Henri Giraud, Henri Frenay, François Darlan
+tf-idf filtered answers:
+['Charles de Gaulle', 'Philippe Pétain', 'Henri Giraud', 'François Darlan', 'Henri Frenay']
+Correct
+The Taft Museum of Art
+['ohio']
+LLM generated answers:
+The Taft Museum of Art, Cincinnati Art Museum, Cleveland Museum of Art, Art Institute of Chicago, Field Museum, Metropolitan Museum of Art, National Gallery of Art, Philadelphia Museum of Art, Getty Museum, Museum of Modern Art
+tf-idf filtered answers:
+['Metropolitan Museum of Art', 'National Gallery of Art', 'Getty Museum', 'Museum of Modern Art']
+The mast from the USS Maine is part of the memorial to the ship & crew at this national cemetery
+['arlington national cemetery', 'arlington cemetery']
+LLM generated answers:
+Fort Sam Houston National Cemetery, Arlington National Cemetery, Tomb of the Unknown Soldier, Jefferson Barracks National Cemetery, National Memorial Cemetery of the Pacific, Arlington House, Grant's Tomb, Tomb of the Unknown Soldier, Fort McHenry National Cemetery, Congressional Cemetery
+tf-idf filtered answers:
+['Tomb of the Unknown Soldier', 'Jefferson Barracks National Cemetery']
+In 2009: Joker on film
+['heath ledger']
+LLM generated answers:
+The Dark Knight, The Hangover, Inglourious Basterds, The Wolf of Wall Street, Slumdog Millionaire, No Country for Old Men, The Social Network, The King's Speech, 12 Years a Slave
+tf-idf filtered answers:
+['The Dark Knight', 'The Hangover', 'Inglourious Basterds', 'The Wolf of Wall Street', 'Slumdog Millionaire', 'No Country for Old Men', 'The Social Network', "The King's Speech", '12 Years a Slave']
+It was the peninsula fought over in the peninsular war of 1808 to 1814
+['iberia', 'iberian peninsula']
+LLM generated answers:
+Iberian Peninsula, Peninsula of Iberia, Iberian Peninsula (Iberia), Portugal, Spain, Portugal (Iberian Peninsula), Iberian Peninsula (Spain), Iberian Peninsula (Portugal), Spain (Iberian Peninsula), Peninsula of Iberia (Spain)
+tf-idf filtered answers:
+['Spain', 'Portugal', 'Iberian Peninsula']
+In 1980 China founded a center for these cute creatures in its bamboo-rich Wolong Nature Preserve
+['panda', 'giant panda']
+LLM generated answers:
+Wolong Giant Panda Research Center, Wolong Nature Reserve, China Conservation and Research Center for the Giant Panda, Giant Panda Research Center, China Conservation and Research Center for the Giant Panda, Bifengxia Giant Panda Research Base, China Giant Panda Research Center, China Conservation and Research Center for the Giant Panda, Wolong Nature Reserve, China Giant Panda Research Base
+tf-idf filtered answers:
+['Wolong Nature Reserve']
+1988: "Father Figure"
+['george michael']
+LLM generated answers:
+Phil Collins, Paul Young, George Michael, Rick Astley, Jason Donovan, Boy George, Jason Orange, Mike + The Mechanics, Wham!, Duran Duran
+tf-idf filtered answers:
+['George Michael', 'Mike + The Mechanics', 'Duran Duran']
+Correct
+In an essay defending this 2011 film, Myrlie Evers-Williams said, "My mother was" this film "& so was her mother"
+['the help']
+LLM generated answers:
+Selma, The Help, Mississippi Burning, A Raisin in the Sun, To Kill a Mockingbird, I Know Why the Caged Bird Sings, Guess Who's Coming to Dinner, A Lesson Before Dying, The Color Purple
+tf-idf filtered answers:
+['The Help', 'Selma']
+Correct
+Father Michael McGivney founded this fraternal society for Catholic laymen in 1882
+['knights of columbus']
+LLM generated answers:
+Knights of Columbus, Catholic Church, Catholic Church in the United States, Catholic Charismatic Renewal, Catholic fraternal organizations, Catholic fraternal societies, Catholic fraternal orders, Catholic men's organizations, Catholic brotherhoods, Catholic fraternal societies of America
+tf-idf filtered answers:
+['Knights of Columbus']
+Correct
+Early projects of the WWF, this organization, included work with the bald eagle & the red wolf
+['world wide fund', 'world wide fund for nature']
+LLM generated answers:
+World Wildlife Fund, International Union for Conservation of Nature, Red Wolf, Bald Eagle Conservation, United States Fish and Wildlife Service, Bald Eagle Protection Act, Red Wolf Recovery Program, International Union for Conservation of Nature, Bald Eagle, Wildlife Conservation Society 20%|██        | 20/100 [27:12<1:54:14, 85.68s/it] 21%|██        | 21/100 [28:29<1:49:39, 83.28s/it] 22%|██▏       | 22/100 [29:46<1:45:27, 81.12s/it] 23%|██▎       | 23/100 [31:08<1:44:29, 81.43s/it] 24%|██▍       | 24/100 [32:35<1:45:24, 83.21s/it] 25%|██▌       | 25/100 [33:51<1:41:27, 81.17s/it] 26%|██▌       | 26/100 [34:51<1:31:55, 74.54s/it] 27%|██▋       | 27/100 [36:16<1:34:32, 77.71s/it] 28%|██▊       | 28/100 [37:11<1:25:07, 70.94s/it] 29%|██▉       | 29/100 [38:39<1:29:57, 76.02s/it] 30%|███       | 30/100 [39:32<1:20:47, 69.24s/it] 31%|███       | 31/100 [41:01<1:26:17, 75.03s/it] 32%|███▏      | 32/100 [42:16<1:25:17, 75.26s/it] 33%|███▎      | 33/100 [43:33<1:24:29, 75.67s/it] 34%|███▍      | 34/100 [44:56<1:25:39, 77.87s/it] 35%|███▌      | 35/100 [45:51<1:16:58, 71.06s/it] 36%|███▌      | 36/100 [47:00<1:15:03, 70.37s/it] 37%|███▋      | 37/100 [48:27<1:19:08, 75.37s/it] 38%|███▊      | 38/100 [49:52<1:20:52, 78.27s/it] 39%|███▉      | 39/100 [51:07<1:18:24, 77.13s/it] 40%|████      | 40/100 [52:49<1:24:45, 84.75s/it]
+tf-idf filtered answers:
+['International Union for Conservation of Nature', 'United States Fish and Wildlife Service']
+Indonesia's largest lizard, it's protected from poachers, though we wish it could breathe fire to do the job itself
+['komodo dragon']
+LLM generated answers:
+Komodo Dragon, Komodo National Park, Indonesian Komodo, Komodo Islands, Komodo Dragon National Park, Komodo National Park, Komodo, Iguana, Monitor Lizard, Varanus
+tf-idf filtered answers:
+['Komodo Dragon', 'Komodo National Park', 'Indonesian Komodo', 'Komodo Islands', 'Komodo Dragon National Park', 'Komodo National Park', 'Komodo', 'Iguana', 'Monitor Lizard', 'Varanus']
+Correct
+Nov. 28, 1929! This man & his chief pilot Bernt Balchen fly to South Pole! Yowza! You'll be an admirable admiral, sir!
+['richard byrd', 'richard e. byrd']
+LLM generated answers:
+Amundsen, Roald, Norwegian, S.A. Andrej, Bernt Balchen, Richard E. Byrd, Roald, Lincoln Ellsworth, Richard E., Amundsen
+tf-idf filtered answers:
+['Norwegian']
+On May 5, 1878 Alice Chambers was the last person buried in this Dodge City, Kansas cemetery
+['boot hill']
+LLM generated answers:
+Fort Scott National Cemetery, Fort Scott Cemetery, Fort Scott, Kansas, Dodge City Cemetery, Dodge City, Kansas, Soldiers' National Cemetery, Fort Leavenworth Cemetery, Fort Leavenworth, Kansas, Fort Scott National Military Cemetery
+tf-idf filtered answers:
+['Kansas', "Soldiers' National Cemetery"]
+The Royal Palace grounds feature a statue of King Norodom, who in the late 1800s was compelled to first put his country under the control of this European power; of course, it was sculpted in that country
+['france']
+LLM generated answers:
+Cambodian Royal Family, European Colonies of Cambodia, French Indochina, French Empire, French Colonial Rule, King Norodom, Cambodian Monarchy, European Influence on Cambodia, French Protectorate of Cambodia, Siam
+tf-idf filtered answers:
+['Cambodian Royal Family', 'European Colonies of Cambodia', 'French Indochina', 'French Empire', 'French Colonial Rule', 'King Norodom', 'Cambodian Monarchy', 'European Influence on Cambodia', 'French Protectorate of Cambodia', 'Siam']
+In the 400s B.C. this Chinese philosopher went into exile for 12 years
+['confucius']
+LLM generated answers:
+Confucius, Lao Tzu, Mozi, Xunzi, Yin Yuang, Zhuangzi, Lao Tzu, Mozi, Yin Yuang, Confucius
+tf-idf filtered answers:
+['Confucius']
+Correct
+Bessie Coleman, the first black woman licensed as a pilot, landed a street named in her honor at this Chicago airport
+["o'hare", "o'hare international airport"]
+LLM generated answers:
+Midway International Airport, 23rd Street Airport, O'Hare International Airport
+tf-idf filtered answers:
+['Midway International Airport', "O'Hare International Airport"]
+The Ammonites held sway in this Mideast country in the 1200s B.C. & the capital is named for them
+['jordan']
+LLM generated answers:
+Ammonites,Ammonites of Jordan,Ammonite,Ammonite Coast,Ammonite Kingdom,Ammonite,Ammonite Tomahawk,Ammonite Shell,Ammonite Fossil,Ammonites
+tf-idf filtered answers:
+['Ammonites', 'Ammonites of Jordan', 'Ammonite', 'Ammonite Coast', 'Ammonite Kingdom', 'Ammonite', 'Ammonite Tomahawk', 'Ammonite Shell', 'Ammonite Fossil', 'Ammonites']
+"The Sum of All Fears"; he also won a screenwriting Oscar for "Good Will Hunting"
+['ben affleck']
+LLM generated answers:
+Matt Damon
+tf-idf filtered answers:
+['Matt Damon']
+One of the N.Y. Times' headlines on this landmark 1973 Supreme Court decision was "Cardinals shocked"
+['roe v. wade']
+LLM generated answers:
+New York Times, Roe v. Wade, Supreme Court, 1973, Landmark Supreme Court Case, Roe Decision, Roe v. Wade Decision, Roe v. Wade Ruling, Roe Decision 1973, Roe v. Wade Landmark
+tf-idf filtered answers:
+['Roe v. Wade', 'New York Times', 'Supreme Court', '1973']
+Correct
+France's Philip IV--known as "The Fair"--had Jacques De Molay, the last Grand Master of this order, burned in 1314
+['knights templar']
+LLM generated answers:
+Knights Templar
+tf-idf filtered answers:
+['Knights Templar']
+Correct
+The Georgia O'Keeffe Museum
+['new mexico']
+LLM generated answers:
+Georgia O'Keeffe Museum, High Museum of Art, Art Institute of Chicago, Whitney Museum of American Art, Museum of Modern Art, Los Angeles County Museum of Art, San Francisco Museum of Modern Art, de Young Museum, Metropolitan Museum of Art, Museum of Contemporary Art
+tf-idf filtered answers:
+['Whitney Museum of American Art', 'Museum of Modern Art', 'San Francisco Museum of Modern Art', 'Metropolitan Museum of Art']
+The name of this largest Moroccan city combines 2 Spanish words
+['casablanca']
+LLM generated answers:
+Rabat, Casablanca, Marrakech, Fez, Tangier, Meknes, Salé, Tangier, Tetouan, Chefchaouen
+tf-idf filtered answers:
+['Casablanca', 'Rabat', 'Chefchaouen']
+Correct
+Jell-O
+['kraft foods']
+LLM generated answers:
+General Foods, Kraft Foods, Unilever, Jell-O Company, American Home Products, Kraft Foods Group, Jell-O LLC, Unilever Plc, General Foods Corporation, Kraft Foods Inc
+tf-idf filtered answers:
+['Kraft Foods']
+Correct
+2011: Chicago mayor Tom Kane
+['kelsey grammer']
+LLM generated answers:
+Mayor of Chicago, Tom Harkin, Rahm Emanuel, Barack Obama, Bill Daley, Richard M. Daley, Harold Washington, Jane Byrne, Michael Bilandic, James Daley
+tf-idf filtered answers:
+['Mayor of Chicago', 'Tom Harkin', 'Rahm Emanuel', 'Barack Obama', 'Bill Daley', 'Richard M. Daley', 'Harold Washington', 'Jane Byrne', 'Michael Bilandic', 'James Daley']
+Title residence of Otter, Flounder, Pinto & Bluto in a 1978 comedy
+['animal house']
+LLM generated answers:
+He-Man and the Masters of the Universe
+tf-idf filtered answers:
+['He Man and the Masters of the Universe']
+Neurobiologist Amy Farrah Fowler on "The Big Bang Theory", in real life she has a Ph.D. in neuroscience from UCLA
+['mayim bialik']
+LLM generated answers:
+UCLA, Amy Farrah Fowler, Amy Farrah Fowler, Amy Farrah Fowler, Amy Farrah Fowler, Amy Farrah Fowler
+tf-idf filtered answers:
+['UCLA']
+In "The Deadlocked Election of 1800", James R. Sharp outlines the fall of this dueling vice president
+['aaron burr']
+LLM generated answers:
+Dueling Vice Presidents of the United States, Vice Presidents of the United States, Aaron Burr, Charles C. Pinckney, George Clinton, George W. Crawford, John C. Calhoun, John Quincy Adams, Richard Mentor Johnson, William Rufus DeVane King
+tf-idf filtered answers:
+['Aaron Burr', 'Richard Mentor Johnson']
+Correct
+He served in the KGB before becoming president & then prime minister of Russia
+['vladimir putin', 'putin']
+LLM generated answers:
+Vladimir Putin,Boris Yeltsin,Gennady Yanayev,Joseph Stalin,Mikhail Gorbachev,Leonid Brezhnev,Nikita Khrushchev,Valery Ginzburg,Russian President, Mikhail Sergeyevich Gorbachev
+tf-idf filtered answers:
+['Vladimir Putin', 'Leonid Brezhnev', 'Mikhail Gorbachev']
+Correct
+When asked to describe herself, she says first & foremost, she is Malia & Sasha's mom
+['michelle obama']
+LLM generated answers:
+Barack Obama, Michelle Obama, Valerie Jarrett, Oprah Winfrey, Maya Angelou, Condoleezza Rice, Gloria Steinem, Shirley Chisholm, Toni Morrison, Angela Davis
+tf-idf filtered answers:
+['Michelle Obama', 'Condoleezza Rice', 'Gloria Steinem', 'Angela Davis']
+Correct
+She wrote, "My candle burns at both ends... but, ah, my foes, and oh, my friends--it gives a lovely light"
+['edna st. vincent millay']
+LLM generated answers:
+Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay, Edna St. Vincent Millay
+tf-idf filtered answers:
+['Edna St. Vincent Millay']
+Correct
+In this Finnish city, the Lutheran Cathedral, also known as Tuomiokirkko
+['helsinki']
+LLM generated answers:
+Turku Cathedral, Helsinki Cathedral, Espoo Cathedral, Oulu Cathedral, Seinäjoki Cathedral, Kuopio Cathedral, Savo Cathedral, Oulu Lutheran Cathedral, Helsinki Metropolitan Cathedral, Tuomiokirkko
+tf-idf filtered answers:
+['Turku Cathedral', 'Helsinki Cathedral', 'Espoo Cathedral', 'Oulu Cathedral', 'Seinäjoki Cathedral', 'Kuopio Cathedral', 'Savo Cathedral', 'Oulu Lutheran Cathedral', 'Helsinki Metropolitan Cathedral', 'Tuomiokirkko'] 41%|████      | 41/100 [54:09<1:21:56, 83.34s/it] 42%|████▏     | 42/100 [55:00<1:11:15, 73.72s/it] 43%|████▎     | 43/100 [56:26<1:13:27, 77.33s/it] 44%|████▍     | 44/100 [57:40<1:11:07, 76.20s/it] 45%|████▌     | 45/100 [58:59<1:10:46, 77.21s/it] 46%|████▌     | 46/100 [1:00:18<1:09:54, 77.67s/it] 47%|████▋     | 47/100 [1:01:46<1:11:23, 80.82s/it] 48%|████▊     | 48/100 [1:02:58<1:07:47, 78.22s/it] 49%|████▉     | 49/100 [1:03:49<59:21, 69.83s/it]   50%|█████     | 50/100 [1:05:20<1:03:32, 76.26s/it] 51%|█████     | 51/100 [1:06:51<1:06:01, 80.84s/it] 52%|█████▏    | 52/100 [1:08:16<1:05:38, 82.06s/it] 53%|█████▎    | 53/100 [1:09:26<1:01:22, 78.34s/it] 54%|█████▍    | 54/100 [1:10:22<54:50, 71.54s/it]   55%|█████▌    | 55/100 [1:11:40<55:05, 73.46s/it] 56%|█████▌    | 56/100 [1:12:59<55:10, 75.24s/it] 57%|█████▋    | 57/100 [1:14:17<54:28, 76.00s/it] 58%|█████▊    | 58/100 [1:15:38<54:16, 77.52s/it] 59%|█████▉    | 59/100 [1:16:54<52:44, 77.17s/it] 60%|██████    | 60/100 [1:18:02<49:31, 74.28s/it] 61%|██████    | 61/100 [1:19:15<48:06, 74.01s/it] 62%|██████▏   | 62/100 [1:20:33<47:36, 75.17s/it] 63%|██████▎   | 63/100 [1:21:54<47:30, 77.04s/it] 64%|██████▍   | 64/100 [1:22:50<42:21, 70.59s/it] 65%|██████▌   | 65/100 [1:24:02<41:28, 71.10s/it]
+Milton Bradley games
+['hasbro']
+LLM generated answers:
+Hasbro
+tf-idf filtered answers:
+['Hasbro']
+Correct
+The Kentucky & Virginia resolutions were passed to protest these controversial 1798 acts of Congress
+['the alien and sedition acts']
+LLM generated answers:
+Kentucky Resolutions, Virginia Resolutions, Alien and Sedition Acts, Alien and Sedition Laws, Sedition Act of 1798, Alien and Sedition Law, Kentucky Resolution, Virginia Declaration of Rights, Declaration of Rights, Act of Congress
+tf-idf filtered answers:
+['Act of Congress']
+1983: "Beat It"
+['michael jackson']
+LLM generated answers:
+Madonna, Michael Jackson, Prince, Whitney Houston, Janet Jackson, George Michael, Rick Astley, Cyndi Lauper, Duran Duran, A-ha
+tf-idf filtered answers:
+['Michael Jackson', 'Madonna', 'Whitney Houston', 'Janet Jackson', 'George Michael', 'Duran Duran']
+Correct
+In 2009: Sookie Stackhouse
+['anna paquin']
+LLM generated answers:
+American Horror Story, True Blood, Anna Paquin, Charlize Theron, Kristin Bauer van Straten, Stephen Moyer, Alexander Skarsgård, Ryan Kwanten, Rutina Wesley
+tf-idf filtered answers:
+['True Blood', 'Anna Paquin', 'Charlize Theron', 'Rutina Wesley']
+This member of the Nixon & Ford cabinets was born in Furth, Germany in 1923
+['henry kissinger']
+LLM generated answers:
+Winston Churchill, Henry Kissinger, John Ehrlichman, Richard Nixon, Gerald Ford, Henry Stimson, John Mitchell, H.R. Haldeman, John Dean, John Ervin
+tf-idf filtered answers:
+['Henry Kissinger', 'Winston Churchill', 'Richard Nixon']
+Correct
+The High Kirk of St. Giles, where John Knox was minister
+['edinburgh']
+LLM generated answers:
+The Scottish Parliament, St. Giles' Cathedral, St. Giles, Edinburgh, St. Giles' Kirk, The High Kirk of St. Giles, The Kirk of St. Giles, St. Giles' Church, Edinburgh Cathedral, St. Giles' Church Edinburgh
+tf-idf filtered answers:
+['Edinburgh']
+Correct
+For the brief time he attended, he was a rebel with a cause, even landing a lead role in a 1950 stage production
+['james dean']
+LLM generated answers:
+Zachary Scott, Robert Earl Jones, James Dean, Anthony Perkins, Robert Wagner, John Gavin, James Doohan, Sal Mineo, Tab Hunter
+tf-idf filtered answers:
+['James Dean', 'James Doohan']
+Correct
+Fisher-Price toys
+['mattel']
+LLM generated answers:
+Mattel
+tf-idf filtered answers:
+['Mattel']
+Correct
+In a 1959 American kitchen exhibit in Moscow, he told Khrushchev, "In America, we like to make life easier for women"
+['richard nixon', 'nixon']
+LLM generated answers:
+Nikita Khrushchev, Nikita Khrushchev, Khrushchev, Nikita, Nikita Khrushchev, Khrushchev, Soviet Union, Soviet Union Politician, Khrushchev, Soviet Politician
+tf-idf filtered answers:
+['Soviet Union']
+One of his "Tales of a Wayside Inn" begins, "Listen, my children, and you shall hear of the midnight ride of Paul Revere"
+['henry wadsworth longfellow']
+LLM generated answers:
+Nathaniel Hawthorne, Henry Wadsworth Longfellow, Ralph Waldo Emerson, Edgar Allan Poe, Oliver Wendell Holmes, Henry Wadsworth Longfellow, Edgar Allan Poe, Robert Frost, John Greenleaf Whittier, Henry Wadsworth Longfellow
+tf-idf filtered answers:
+['Henry Wadsworth Longfellow', 'Nathaniel Hawthorne', 'Ralph Waldo Emerson', 'Robert Frost', 'Edgar Allan Poe']
+Correct
+This bestseller about problems on the McCain-Palin ticket became an HBO movie with Julianne Moore
+['game change']
+LLM generated answers:
+The Story of Us, The Campaign Trail, The McCain-Palin Ticket, The Republican Party, The 2008 United States presidential election, The John McCain campaign, The Republican National Convention, The 2008 Republican National Convention, The Republican Party platform
+tf-idf filtered answers:
+['The Story of Us', 'The Campaign Trail', 'The McCain Palin Ticket', 'The Republican Party', 'The 2008 United States presidential election', 'The John McCain campaign', 'The Republican National Convention', 'The 2008 Republican National Convention', 'The Republican Party platform']
+A 2-part episode of "JAG" introduced this Mark Harmon drama
+['ncis']
+LLM generated answers:
+JAG, Frasier, NCIS, Chicago Hope, Chicago Fire, Doogie Howser, St. Elsewhere, ER, Chicago Med
+tf-idf filtered answers:
+['NCIS', 'Chicago Fire']
+Correct
+This port is the southernmost of South Africa's 3 capitals
+['cape town']
+LLM generated answers:
+Cape Town, Port Elizabeth, East London
+tf-idf filtered answers:
+['Cape Town', 'Port Elizabeth']
+Correct
+Keats was quoting this Edmund Spenser poem when he told Shelley to "'load every rift' of your subject with ore"
+['the faerie queene']
+LLM generated answers:
+John Keats, John Keats, John Keats, John Keats, John Keats, John Keats, John Keats, John Keats, John Keats, John Keats
+tf-idf filtered answers:
+['John Keats']
+In an 1819 letter Keats wrote that this lord & poet "cuts a figure, but he is not figurative"
+['lord byron']
+LLM generated answers:
+John Keats, Lord Byron, Percy Bysshe Shelley, John Keats, Percy Bysshe Shelley, Lord Byron, John Keats, Percy Bysshe Shelley, John Keats, Lord Byron
+tf-idf filtered answers:
+['John Keats', 'Lord Byron']
+This clear Greek liqueur is quite potent, so it's usually mixed with water, which turns it white & cloudy
+['ouzo']
+LLM generated answers:
+Rakomelo, Metaxa, Ouzo, Greek Vodka, Greek Liqueurs, Mastiha, Grappa, Greek Brandy, Absinthe, Limonada
+tf-idf filtered answers:
+['Ouzo']
+Correct
+Feb. 1, National Freedom Day, is the date in 1865 when a resolution sent the states an amendment ending this
+['slavery', 'slavery in the united states']
+LLM generated answers:
+Reconstruction Amendment, 13th Amendment, Emancipation Proclamation, Civil War, Union, Lincoln's Emancipation Proclamation, 1863, National Freedom Day, Freedmen's Bureau, Emancipation
+tf-idf filtered answers:
+['Emancipation Proclamation', 'Union', '1863']
+This person is the queen's representative in Canada; currently the office is held by David Johnston
+['governor general of canada']
+LLM generated answers:
+Governor General of Canada, Governor General, Canada, Governor General of Canada, Canada, Canadian monarch's representative, Canadian monarch's representative, David Johnston, Sir John A. Macdonald
+tf-idf filtered answers:
+['Governor General of Canada', 'Sir John A. Macdonald']
+Correct
+He earned the "fifth Beatle" nickname by producing all of the Beatles' albums
+['george martin']
+LLM generated answers:
+George Martin, Beatles, Allen Klein, Brian Epstein, Richard Lester, George Harrison, Phil Spector, George Martin, George Martin
+tf-idf filtered answers:
+['George Martin']
+Correct
+Early in their careers, Mark Twain & Bret Harte wrote pieces for this California city's Chronicle
+['san francisco']
+LLM generated answers:
+Sacramento, San Francisco Chronicle, San Francisco Chronicle, Chronicle, San Francisco, California Chronicle, Sacramento California Chronicle, San Francisco Chronicle, Chronicle of San Francisco, Sacramento Chronicle
+tf-idf filtered answers:
+['San Francisco', 'Chronicle']
+Correct
+Large specimens of this marsupial can leap over barriers 6 feet high
+['kangaroo']
+LLM generated answers:
+Kangaroo, Red Kangaroo, Eastern Grey Kangaroo, Western Grey Kangaroo, Wallaroo, Wallaby, Tasmanian Devil, Quokka, Sugar Glider, Pademelon
+tf-idf filtered answers:
+['Kangaroo', 'Wallaby']
+Correct
+Because it's cured & stored in brine, this crumbly white cheese made from sheep's milk is often referred to as pickled cheese
+['feta']
+LLM generated answers:
+Feta, Graviera, Halloumi, Saganaki, Manouri, Kefalograviera, Pecorino Romano, Ricotta Salata, Caspian, Asiago
+tf-idf filtered answers:
+['Feta']
+Correct
+1927! Gene Tunney takes a long count in the squared circle but rises to defeat this "Manassa Mauler"! Howzabout that!
+['jack dempsey']
+LLM generated answers:
+Gene Tunney, Jack Dempsey
+tf-idf filtered answers:
+['Jack Dempsey']
+Correct
+Italian for "leader", it was especially applied to Benito Mussolini
+['duce']
+LLM generated answers:
+Duce, Il Duce, Benito Mussolini, Fascist, Mussolini, Adolf Hitler, Führer, National Socialist, Hitler, Mussolini
+tf-idf filtered answers:
+['Duce', 'Il Duce', 'National Socialist']
+Correct
+The Kalamazoo Institute of Arts
+['michigan']
+LLM generated answers:
+Kalamazoo Institute of Arts, Art Institute of Chicago, Detroit Institute of Arts, Minneapolis Institute of Art, Cleveland Museum of Art, Museum of Fine Arts, Boston, Art Institute of Cincinnati, Cincinnati Art Museum, Philadelphia Museum of Art 66%|██████▌   | 66/100 [1:25:27<42:39, 75.27s/it] 67%|██████▋   | 67/100 [1:26:50<42:41, 77.63s/it] 68%|██████▊   | 68/100 [1:27:54<39:08, 73.40s/it] 69%|██████▉   | 69/100 [1:29:19<39:40, 76.79s/it] 70%|███████   | 70/100 [1:30:49<40:24, 80.83s/it] 71%|███████   | 71/100 [1:32:02<38:00, 78.65s/it] 72%|███████▏  | 72/100 [1:33:17<36:05, 77.34s/it] 73%|███████▎  | 73/100 [1:34:32<34:30, 76.67s/it] 74%|███████▍  | 74/100 [1:35:58<34:26, 79.49s/it] 75%|███████▌  | 75/100 [1:37:12<32:28, 77.96s/it] 76%|███████▌  | 76/100 [1:38:35<31:43, 79.31s/it] 77%|███████▋  | 77/100 [1:39:46<29:27, 76.83s/it] 78%|███████▊  | 78/100 [1:41:11<29:05, 79.34s/it] 79%|███████▉  | 79/100 [1:42:20<26:42, 76.32s/it] 80%|████████  | 80/100 [1:43:39<25:42, 77.12s/it] 81%|████████  | 81/100 [1:44:56<24:25, 77.12s/it] 82%|████████▏ | 82/100 [1:45:52<21:14, 70.82s/it] 83%|████████▎ | 83/100 [1:47:12<20:47, 73.36s/it] 84%|████████▍ | 84/100 [1:48:25<19:31, 73.24s/it] 85%|████████▌ | 85/100 [1:49:39<18:22, 73.49s/it] 86%|████████▌ | 86/100 [1:50:42<16:24, 70.32s/it] 87%|████████▋ | 87/100 [1:52:06<16:07, 74.45s/it] 88%|████████▊ | 88/100 [1:53:28<15:20, 76.74s/it] 89%|████████▉ | 89/100 [1:54:59<14:51, 81.01s/it]
+tf-idf filtered answers:
+['Kalamazoo Institute of Arts', 'Art Institute of Chicago', 'Detroit Institute of Arts', 'Minneapolis Institute of Art', 'Cleveland Museum of Art', 'Museum of Fine Arts', 'Boston', 'Art Institute of Cincinnati', 'Cincinnati Art Museum', 'Philadelphia Museum of Art']
+The Sun Valley Center for the Arts
+['idaho']
+LLM generated answers:
+The Sun Valley Center for the Arts, Idaho State of the Arts, Idaho, Idaho Arts Commission, Idaho State Museum, Idaho Arts, Idaho Cultural Heritage, Idaho Tourism, Idaho Arts Council, Idaho State, Idaho Arts Foundation
+tf-idf filtered answers:
+['Idaho']
+Correct
+You can't mention this shortstop without mentioning his double-play associates Evers & Chance
+['joe tinker']
+LLM generated answers:
+Ernie, Eddie, Lou, Joe, Rabbit, Harry, Cap, Billy, Larry, Jackie
+tf-idf filtered answers:
+['Rabbit', 'Lou']
+In 1840 Horace Greeley began publishing "The Log Cabin", a weekly campaign paper in support of this Whig candidate
+['william henry harrison']
+LLM generated answers:
+The Log Cabin, Horace Greeley, Whig Party, William Henry Harrison, 1840 US Presidential Election, Democratic Party, James K. Polk, William Henry Harrison Presidential Campaign, Whig Party Platform, Harrison–Tyler Ticket
+tf-idf filtered answers:
+['William Henry Harrison', 'Horace Greeley', 'Whig Party']
+Correct
+Pierre Cauchon, Bishop of Beauvais, presided over the trial of this woman who went up in smoke May 30, 1431
+['joan of arc', "jeanne d'arc"]
+LLM generated answers:
+Joan of Arc, Maid of Orléans, Joan of Arc, Joan of Arc Trial, Trial of Joan of Arc, Joan of Arc Execution, Joan of Arc Burning, Joan of Arc Inquisition, Joan of Arc Trial of Faith, Joan of Arc Heresy
+tf-idf filtered answers:
+['Joan of Arc']
+Correct
+This Wisconsin city claims to have built the USA's only granite dome
+['madison']
+LLM generated answers:
+Madison, Wisconsin State Capitol, Wisconsin State Dome, Capitol Square, Wisconsin State Capitol Building, Granite City, Wisconsin State Dome Building, Dane County, Wisconsin State Capitol Dome
+tf-idf filtered answers:
+['Madison']
+Correct
+This Georgia paper is known as the AJC for short
+['the atlanta journal-constitution']
+LLM generated answers:
+Atlanta Journal-Constitution, Atlanta Journal, The Atlanta Journal, The Atlanta Constitution, The Atlanta, The Atlanta Press, The Atlanta, The Atlanta, The Atlanta, The, The Atlanta
+tf-idf filtered answers:
+['Atlanta Journal', 'The']
+Wooden 2-story verandas in this Liberian capital are an architectural link to the U.S. south
+['monrovia']
+LLM generated answers:
+Monrovia, Buchanan, Sinoe, Cape Mesurado, Monrovia, Buchanan, Sinoe, Cape Mesurado, Robertsport, Monrovia
+tf-idf filtered answers:
+['Monrovia', 'Buchanan']
+Correct
+This New Orleans venue reopened Sept. 25, 2006
+['mercedes-benz superdome', 'the superdome']
+LLM generated answers:
+House of Blues, The Fillmore, The Colosseum at Caesars Palace, The Orleans Arena, The Palazzo, The AXIS at Planet Hollywood, The Orleans Hotel and Casino, The Hard Rock Hotel and Casino, The Mandalay Bay Events Center
+tf-idf filtered answers:
+['House of Blues', 'The Fillmore', 'The Colosseum at Caesars Palace', 'The Orleans Arena', 'The Palazzo', 'The AXIS at Planet Hollywood', 'The Orleans Hotel and Casino', 'The Hard Rock Hotel and Casino', 'The Mandalay Bay Events Center']
+"The Hunt for Red October"; he went more comedic as Jack Donaghy on "30 Rock"
+['alec baldwin']
+LLM generated answers:
+ Alec Baldwin, Tom Cruise, Harrison Ford, William Devane, Josh Brolin, Jon Hamm, Tom Skerritt, Robert Conrad, Scott Glenn, Sean Penn
+tf-idf filtered answers:
+['Alec Baldwin', 'Harrison Ford']
+Correct
+Rita Dove titled a collection of poems "On the Bus with" this woman
+['rosa parks']
+LLM generated answers:
+Rita Dove, Maya Angelou, Zora Neale Hurston, Toni Morrison, Langston Hughes, Alice Walker, Countee Cullen, Gwendolyn Brooks, Ntozake Shange, Audre Lorde
+tf-idf filtered answers:
+['Zora Neale Hurston']
+"Patriot Games"; he's had other iconic roles, in space & underground
+['harrison ford']
+LLM generated answers:
+Tom Cruise, Harrison Ford, Alec Baldwin, Harrison Ford, Harrison Ford, Harrison Ford, Tom Cruise, Tom Hanks, Harrison Ford, Tom Cruise
+tf-idf filtered answers:
+['Harrison Ford', 'Alec Baldwin']
+Correct
+This sacred structure dates from the late 600's A.D.
+['dome of the rock']
+LLM generated answers:
+Borobudur Temple, Angkor Wat, Taj Mahal, Meenakshi Amman Temple, Angkor Vat, Borobudur, Mahabodhi Temple, Angkor Wat Temple, Mahabalipuram Temple, Boran
+tf-idf filtered answers:
+['Borobudur Temple', 'Angkor Wat', 'Taj Mahal', 'Meenakshi Amman Temple', 'Angkor Vat', 'Borobudur', 'Mahabodhi Temple', 'Angkor Wat Temple', 'Mahabalipuram Temple', 'Boran']
+1988: "Man In The Mirror"
+['michael jackson']
+LLM generated answers:
+Madonna,Michael Jackson,Prince,Whitney Houston,George Michael,Rick Astley,George Benson,Michael Bolton,Sheila E
+tf-idf filtered answers:
+['Michael Jackson', 'Whitney Houston', 'George Michael', 'Madonna']
+Correct
+Matthias Church, or Matyas Templom, where Franz Joseph was crowned in 1867
+['budapest']
+LLM generated answers:
+Matthias Church, St. Stephen's Basilica, St. Stephen, Hungarian Parliament Building, Matthias Church, Budapest, St. Stephen's Basilica, Hungarian Parliament, Matthias Templom
+tf-idf filtered answers:
+['Budapest']
+Correct
+Attending UCLA in the '60s, he was no "Meathead", he just played one later on television
+['rob reiner']
+LLM generated answers:
+Ken Howard, Robert Vaughn, Dennis Haysbert, George Hamilton, Richard Chamberlain, Leonard Nimoy, Robert Conrad, David Carradine, Robert Urich, Ron Masak
+tf-idf filtered answers:
+['Robert Urich', 'Ken Howard']
+Kinch, Carter & LeBeau were all residents of Stalag 13 on this TV show
+["hogan's heroes"]
+LLM generated answers:
+Stalag 13, Hogan's Heroes
+tf-idf filtered answers:
+["Hogan's Heroes"]
+Correct
+News flash! This less-than-yappy pappy is sixth veep to be nation's top dog after chief takes deep sleep!
+['calvin coolidge']
+LLM generated answers:
+Harry Truman, Franklin D. Roosevelt, Calvin Coolidge, Herbert Hoover, Warren G. Harding, William Howard Taft, Woodrow Wilson, James Madison, Rutherford B. Hayes, Grover Cleveland
+tf-idf filtered answers:
+['Herbert Hoover', 'Warren G. Harding', 'Woodrow Wilson', 'Calvin Coolidge', 'William Howard Taft']
+In 2001: The president of the United States on television
+['martin sheen']
+LLM generated answers:
+George W. Bush, Bill Clinton, Donald Trump, Barack Obama, Jimmy Carter, Gerald Ford, Richard Nixon, John F. Kennedy, Ronald Reagan, Al Gore
+tf-idf filtered answers:
+['Richard Nixon', 'Ronald Reagan']
+1989: "Miss You Much"
+['janet jackson']
+LLM generated answers:
+New Kids on the Block, New Kids, NKOTB, Boyz II Men, New Edition, New Kids, Bobby Brown, New Edition, New Kids, New Kids
+tf-idf filtered answers:
+['New Kids', 'Bobby Brown']
+1922: It's the end of an empire! This empire, in fact! After 600 years, it's goodbye, this, hello, Turkish Republic!
+['ottoman empire']
+LLM generated answers:
+Ottoman Empire, Turkish Republic, Republic of Turkey, Fall of the Ottoman Empire
+tf-idf filtered answers:
+['Ottoman Empire', 'Republic of Turkey']
+Correct
+Crest toothpaste
+['procter & gamble']
+LLM generated answers:
+Procter & Gamble, Unilever, Colgate-Palmolive, Church & Dwight, GlaxoSmithKline, Reckitt Benckiser, Henkel, Shiseido, L'Oréal, Kraft Heinz
+tf-idf filtered answers:
+['Procter & Gamble']
+Correct
+In 1888 this Chancellor told the Reichstag, "we Germans fear God, but nothing else in the world"
+['otto von bismarck', 'von bismarck']
+LLM generated answers:
+Otto von Bismarck, Otto von Bismarck, Hertz, Otto von Bismarck, Hertz, Otto von Bismarck, Hertz, Hertz, Bismarck
+tf-idf filtered answers:
+['Otto von Bismarck', 'Hertz']
+Correct
+In 1787 he signed his first published poem "Axiologus"; axio- is from the Greek for "worth"
+['william wordsworth']
+LLM generated answers:
+Axiologus, Johann Joachim Winckelmann, Winckelmann, Friedrich Maximilian Klinger, Johann Gottfried Herder, Christoph Martin Wieland, Gotthold Ephraim Lessing, Johann Wolfgang von Goethe, Novalis, Friedrich
+tf-idf filtered answers:
+['Winckelmann']
+Not to be confused with karma, krama is a popular accessory sold in cambodia; the word means "scarf" in this national language of Cambodia 90%|█████████ | 90/100 [1:56:13<13:09, 78.96s/it] 91%|█████████ | 91/100 [1:57:27<11:36, 77.35s/it] 92%|█████████▏| 92/100 [1:58:45<10:21, 77.73s/it] 93%|█████████▎| 93/100 [2:00:07<09:11, 78.82s/it] 94%|█████████▍| 94/100 [2:01:02<07:11, 71.86s/it] 95%|█████████▌| 95/100 [2:01:55<05:31, 66.23s/it] 96%|█████████▌| 96/100 [2:03:12<04:37, 69.49s/it] 97%|█████████▋| 97/100 [2:04:37<03:42, 74.11s/it] 98%|█████████▊| 98/100 [2:06:01<02:33, 76.93s/it] 99%|█████████▉| 99/100 [2:07:15<01:16, 76.20s/it]100%|██████████| 100/100 [2:08:30<00:00, 75.70s/it]100%|██████████| 100/100 [2:08:30<00:00, 77.10s/it]
+
+['khmer language']
+LLM generated answers:
+Krama, Khmer Language, Khmer Alphabet, Khmer Script, Cambodian Language, Cambodian Alphabet, Khmer Script, Khmer Language, Krama
+tf-idf filtered answers:
+['Cambodian Language']
+Phnom Penh's notorious gridlock is circumvented by the nimble tuk-tuk, a motorized taxi that's also known as an auto this, a similar Asian conveyance.
+['rickshaw']
+LLM generated answers:
+Phnom Penh, Tuk-tuk, Auto Rickshaw, Motorbike, Taxis, Conveyance, Transportation, Vehicles, Taxi, Rickshaw
+tf-idf filtered answers:
+['Rickshaw', 'Motorbike']
+Correct
+1980: "Rock With You"
+['michael jackson']
+LLM generated answers:
+Rick Springfield, Rod Stewart, Michael Jackson, Lionel Richie, Kenny Loggins, Daryl Hall and John Oates, Hall & Oates, The Commodores, The Doobie Brothers, Earth, Wind & Fire
+tf-idf filtered answers:
+['Michael Jackson', 'The Doobie Brothers', 'Hall & Oates', 'Lionel Richie', 'Kenny Loggins', 'Earth']
+Correct
+The Pulitzer-winning "The Making of the President 1960" covered this man's successful presidential campaign
+['jfk', 'john f. kennedy']
+LLM generated answers:
+John F. Kennedy, Richard Nixon, Barry Goldwater, John F. Kennedy, Richard Nixon, John F. Kennedy, Richard Nixon, John F. Kennedy, John F. Kennedy, John F. Kennedy
+tf-idf filtered answers:
+['Richard Nixon', 'Barry Goldwater']
+In 1843 Isaac Dittenhoefer became the first pres. of this Jewish club whose name means "children of the covenant"
+["b'nai b'rith"]
+LLM generated answers:
+B'nai B'rith
+tf-idf filtered answers:
+["B'nai B'rith"]
+Correct
+Don Knotts took over from Norman Fell as the resident landlord on this sitcom
+["three's company"]
+LLM generated answers:
+Three's Company
+tf-idf filtered answers:
+["Three's Company"]
+Correct
+U.N. Res. 242 supports "secure and recognized boundaries" for Israel & neighbors following this June 1967 war
+['the six day war']
+LLM generated answers:
+United States, Israel, Arab League, 1948 Arab-Israeli War, June War, Six-Day War, Gaza Strip, Suez Crisis, 1967 Six-Day War
+tf-idf filtered answers:
+['Suez Crisis']
+This blonde beauty who reprised her role as Amanda on the new "Melrose Place" was a psychology major
+['heather locklear']
+LLM generated answers:
+Melrose Place, Amanda Ward, Gabrielle Carteris, Heather Locklear, Jennie Garth, Shannen Doherty, Sarah Michelle Gellar, Rebecca Gayheart, Tori Spelling, Jessica Alba
+tf-idf filtered answers:
+['Heather Locklear', 'Melrose Place']
+Correct
+The name of this dish of marinated lamb, skewered & grilled, comes from the Greek for "skewer" & also starts with "s"
+['souvlaki']
+LLM generated answers:
+Souvlaki, Souvlaki, Souvlakia, Souvlakia, Gyro, Souvlakia, Kebab, Souvlakia, Kleftiko, Souvlaki
+tf-idf filtered answers:
+['Souvlaki']
+Correct
+Post-it notes
+['3m']
+LLM generated answers:
+3M, 3M Company, 3M Incorporated, 3M Limited, Post-it, Post-it Notes, Post-it Products, Post-it Stationery, Sticky Notes, Adhesive Notes
+tf-idf filtered answers:
+['3M']
+Correct
+In 2010: As Sherlock Holmes on film
+['robert downey, jr.']
+LLM generated answers:
+Eddie Redmayne, Benedict Cumberbatch, Robert Downey Jr., Gary Oldman, Christian Bale, Jonny Lee Miller, Ian McKellen, Jude Law, Johnny Depp, Hugh Laurie
+tf-idf filtered answers:
+['Eddie Redmayne', 'Benedict Cumberbatch', 'Robert Downey Jr.', 'Gary Oldman', 'Christian Bale', 'Jonny Lee Miller', 'Ian McKellen', 'Jude Law', 'Johnny Depp', 'Hugh Laurie']
+Precision: 0.54
+Mean Reciprocal Rank: 0.5658333333333333

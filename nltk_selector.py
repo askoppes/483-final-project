@@ -175,7 +175,7 @@ class IRSystemSelector:
             filtered_result = [term for term in possible.lower() if not term in set(stopwords.words('english'))]
             #possible_terms = [cached_stem(term) for term in filtered_result]
             possible_title = " ".join(filtered_result)
-            if possible_title in self.titles.keys():
+            if possible_title in self.titles.keys() and self.titles[possible_title] not in options:
                 options.append(self.titles[possible_title])
 
         # calculate idf for the document *titles* (delete later if we decide not to use it)
