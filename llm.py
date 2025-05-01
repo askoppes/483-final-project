@@ -16,9 +16,11 @@ pipe = pipeline(
     model=model_id,
     torch_dtype=torch.bfloat16,
     device_map="auto",
-    top_p=0.0,
-    temperature=0.00001,
-    do_sample=True,
+    top_p=None,
+    #top_p=0.0,
+    temperature=None,
+    #=temperature=0.00001,
+    do_sample=False,
 )
 # lower temperature should hopefully result in less inconsistency
 
