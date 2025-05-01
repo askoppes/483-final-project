@@ -10,6 +10,7 @@ import json
 from tqdm import tqdm
 from functools import lru_cache
 import os
+import string
 
 ps = PorterStemmer()
 
@@ -135,7 +136,9 @@ class IRSystemSelector:
         # Get stemmed version of all the docIDs (titles) to compare with LLM results
         for title in self.weights.keys():
             # remove any stop words (so we don't fail to match a title if the only non-match is stop words)
-            filtered_title = [term for term in title.lower() if not term in set(stopwords.words('english'))]
+            title_copy = title
+            title_copy.translate(str.maketrans('', '', string.punctuation))
+            filtered_title = [term for term in title_copy.lower() if not term in set(stopwords.words('english'))]
             #title_terms = [cached_stem(term) for term in filtered_title]
             no_stop_words = " ".join(filtered_title)
             self.titles[no_stop_words] = title
@@ -172,7 +175,9 @@ class IRSystemSelector:
 
         options = []
         for possible in top_ten:
-            filtered_result = [term for term in possible.lower() if not term in set(stopwords.words('english'))]
+            title_copy = possible
+            title_copy.translate(str.maketrans('', '', string.punctuation))
+            filtered_result = [term for term in title_copy.lower() if not term in set(stopwords.words('english'))]
             #possible_terms = [cached_stem(term) for term in filtered_result]
             possible_title = " ".join(filtered_result)
             if possible_title in self.titles.keys() and self.titles[possible_title] not in options:

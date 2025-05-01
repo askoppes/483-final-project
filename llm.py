@@ -16,7 +16,11 @@ pipe = pipeline(
     model=model_id,
     torch_dtype=torch.bfloat16,
     device_map="auto",
+    top_p=0.0,
+    temperature=0.00001,
+    do_sample=True,
 )
+# lower temperature should hopefully result in less inconsistency
 
 if (os.path.exists("cur_question.txt")):
     with open("cur_question.txt", "r") as f:
