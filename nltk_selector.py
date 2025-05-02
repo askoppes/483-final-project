@@ -133,21 +133,20 @@ class IRSystemSelector:
 
             file_count += 1
         
-        # Get stemmed version of all the docIDs (titles) to compare with LLM results
+        # Get version of all the docIDs (titles) with no stop words to compare with LLM results
         for title in self.weights.keys():
             # remove any stop words (so we don't fail to match a title if the only non-match is stop words)
             title_copy = title
             title_copy.translate(str.maketrans('', '', string.punctuation))
             filtered_title = [term for term in title_copy.lower() if not term in set(stopwords.words('english'))]
-            #title_terms = [cached_stem(term) for term in filtered_title]
             no_stop_words = " ".join(filtered_title)
             self.titles[no_stop_words] = title
 
 
-    #def run_query(self, category, query):
     def run_query(self, query, top_ten):
         terms = query.strip().split()
         expanded = []
+        # synonyms added
         for term in terms:
             synset = wn.synsets(term)
             if synset:
@@ -157,13 +156,8 @@ class IRSystemSelector:
         terms = list(set(expanded))
         terms = [cached_stem(term) for term in terms]
         self.calc_weights(top_ten)
-        # stem the top results provided by the LLM to match more possible titles
-        #topic = category.strip().split()
-        #topic = [cached_stem(word) for word in topic]
-        #return self._run_query(topic, terms)
         return self._run_query(terms, top_ten)
 
-    #def _run_query(self, topic, terms):
     def _run_query(self, terms, top_ten):
         # Use ltn to weight terms in the query:
         #   l: logarithmic tf
@@ -178,70 +172,18 @@ class IRSystemSelector:
             title_copy = possible
             title_copy.translate(str.maketrans('', '', string.punctuation))
             filtered_result = [term for term in title_copy.lower() if not term in set(stopwords.words('english'))]
-            #possible_terms = [cached_stem(term) for term in filtered_result]
             possible_title = " ".join(filtered_result)
             if possible_title in self.titles.keys() and self.titles[possible_title] not in options:
                 options.append(self.titles[possible_title])
 
-        # calculate idf for the document *titles* (delete later if we decide not to use it)
-        '''
-        options = []    # possible options for the title of our document
-        possible_weights = {}
-        for possible in top_ten:
-            filtered_result = [term for term in possible.lower() if not term in set(stopwords.words('english'))]
-            possible_terms = [cached_stem(term) for term in filtered_result]
-            weights = {}
-            included = set()
-            for term in possible_terms:
-                if term in included:
-                    continue
-                tf = self.log_tf(term, possible_terms)
-                if term not in self.title_counts:
-                    # if term from query not in document collection, it has weight of 0
-                    weights[term] = 0
-                else:
-                    # if it is in the document collection, calculate idf
-                    idf = math.log(len(self.title_weights) / self.title_counts[term], 10)
-                    total_weight = tf * idf
-                    weights[term] = total_weight
-            possible_weights[possible] = weights
-            #possible_title = " ".join(possible_terms)
-            #if possible_title in self.titles.keys():
-                # only keep the possible docs that actually exist
-                #options.append(self.titles[possible_title])
-        
-        # score the document *titles* to find the best ones to narrow down our search to
-        option_sums = {}
-        for doc_title, title_score in self.title_weights.items():
-            for possibility, possibility_weights in possible_weights.items():
-                curr_score = 0
-                for possible_term in possibility_weights.keys():
-                    if possible_term in title_score:
-                        curr_score += title_score[possible_term] * possibility_weights[possible_term]
-                if curr_score not in option_sums:
-                    option_sums[curr_score] = []
-                option_sums[curr_score].append(doc_title)
-        
-        best_options = sorted(option_sums.keys(), reverse=True)
-        i = 0
-        while i < len(best_options) and len(best_options) < 10 and best_options[i] > 0:
-            # only include document possibilities with score greater than 0 (to really narrow our search)
-            options.append(option_sums[best_options[i]])
-            i += 1
-        '''
-
-        #all_terms = terms + topic
-
         weights = {}
         # Count terms
-        #for term in all_terms:
         for term in terms:
             if term not in weights:
                 weights[term] = 0
             weights[term] += 1
         
         # Calc tf-idf weight from counts
-        #for term in all_terms:
         for term in terms:
             if term in self.counts:
                 # Duplicates in query
@@ -257,9 +199,7 @@ class IRSystemSelector:
         sums = {}
         
         for docID in options:
-            # print("title? ", docID)
             title_tokens = [cached_stem(w.lower()) for w in docID.split() if w.lower() not in set(stopwords.words('english'))]
-            #fix_title = " ".join(title_tokens)
             query_tokens = [t for t in terms if t not in set(stopwords.words('english'))]
             
             similarity = 0
@@ -295,8 +235,6 @@ class IRSystemSelector:
         while i < len(highest) and len(result) < 10:
             result += sums[highest[i]]
             i += 1
-
-        #result = result[:10]
 
         if len(result) == 0:
             return top_ten

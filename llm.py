@@ -17,10 +17,8 @@ pipe = pipeline(
     torch_dtype=torch.bfloat16,
     device_map="auto",
     top_p=None,
-    #top_p=0.0,
     temperature=None,
-    #=temperature=0.00001,
-    do_sample=False,
+    do_sample=False,   # the Llama equivalent to setting temperature to 0
 )
 # lower temperature should hopefully result in less inconsistency
 
@@ -32,6 +30,7 @@ else:
     questions_to_skip = 0
     correct = 0
 
+# to only run a subset of the questions, you can change the number of questions answered in cur_question.txt
 correct = 0 if questions_to_skip == 100 else correct
 questions_to_skip = 0 if questions_to_skip == 100 else questions_to_skip
 
@@ -41,6 +40,7 @@ for i in range(questions_to_skip*4, len(questions), 4):
     cur = {"category":questions[i].strip(), "prompt":questions[i+1].strip(), "answer":[x.lower() for x in questions[i+2].strip().split("|")]}
     queries.append(cur)
 
+# LLM prompt
 system_msg = "You are a Jeopardy expert and you are tasked with answering the question by providing only the Wikipedia page title.\n" \
 "Do not answer in a question format. You are to not speculate and you must refer only to Wikipedia pages for your answers. Your answers must be relevant to the given category."
 
@@ -59,18 +59,13 @@ msg = "Provide a comma-separated list of the 10 best possible answers to the giv
 "The question is delimited by ''' and the category is delimited by ---.\n" \
 "---{}--- '''{}'''"
 
-# file = open("answers.txt", "w")
 i = 0
 mrr_sum = 0
 
 for query in tqdm(queries):
-    #result = ir.run_query(query[0], query[1])
     print(query["prompt"])
-    # messages = [
-    # {"role": "system", "content": system_msg},
-    # {"role": "user", "content": msg.format(query["category"], query["prompt"])},
-    # ]
 
+    # get the LLM-filtered answer to the question
     messages = [
         {"role":"user", "content": system_msg + msg.format(query["category"], query["prompt"])}
     ]
@@ -81,27 +76,37 @@ for query in tqdm(queries):
         pad_token_id=128001  
     )
 
+    # display the results of LLM prompting
     print("LLM generated answers:")
     print(outputs[0]["generated_text"][-1]["content"])
+
+    # make answers into array to make them processable for future use
     answers = outputs[0]["generated_text"][-1]["content"].split(",")
     answers = [x.strip().strip("\"").replace("-", " ") for x in answers]
 
+    # re-rank using tf-idf, display the results
     filtered_answers = ir.run_query(query["prompt"], answers)
     print("tf-idf filtered answers:")
     print(filtered_answers)
 
+    # display the final answer
+    print("Final Answer:")
+    print(filtered_answers[0])
+    print()
+
     
     
-    #if len(set(query["answer"]) & set(answers)) != 0:
     if filtered_answers[0].lower() in query["answer"]:
         # first answer given by the LLM is correct
         print('Correct')
         correct += 1
     
+    # lowercase all the answers to calculate MRR
     lower_answers = []
     for answer in filtered_answers:
         lower_answers.append(answer.lower())
     
+    # calculate Mean Reciprocal Rank
     index = 3000  # magic number impossible starting index (filtered_answers max length is 10)
     for answer in query["answer"]:
         if answer not in lower_answers:
@@ -113,7 +118,6 @@ for query in tqdm(queries):
         reciprocal = 1 / index
         mrr_sum += reciprocal
 
-    # file.write(f"{query[0]}\n{query[1]}\n{result}\n\n")
     i += 1
     with open("cur_question.txt", "w") as f:
         f.write(str(questions_to_skip+i) + "\n" + str(correct))
